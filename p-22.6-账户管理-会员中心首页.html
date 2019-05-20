@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/member-center.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+		<div class="accmanage-cont">
+			<div class="container clearfix">
+				<div class="cont-left"></div>
+				<script type="text/javascript">
+					$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+				</script>
+				<div class="cont-right">
+					<div class="member-center">
+						<h2><img src="img/accmanage/info.png"/>2017年11月06日 尊敬的 <span>180****2751</span> ， 欢迎来到芬木网会员中心！</h2>
+						<h3>我的认证</h3>
+						<div class="certification">
+							<p>
+								<img src="img/accmanage/v1.png"/>
+								<span>个人实名</span>
+								完成个人实名认证，方可在芬木平台发布求购和交易
+								<a href="javascript:void(0)">立即认证</a>
+							</p>
+							<p>
+								<img src="img/accmanage/v1.png"/>
+								<span>企业实名</span>
+								完成企业实名认证，成为正式会员，开通专享服务
+								<a href="javascript:void(0)">立即认证</a>
+							</p>
+						</div>
+						<div class="certification hide">
+							<p>
+								<img src="img/accmanage/v2.png"/>
+								<span>个人实名</span>
+								您已完成个人实名认证
+							</p>
+							<p>
+								<img src="img/accmanage/v2.png"/>
+								<span>企业实名</span>
+								已完成企业实名认证，平台已为您开通专享服务 
+								<a class="btn-yellow" href="#">立即发布商品</a>
+							</p>
+						</div>
+						<h3>我的订单</h3>
+						<div class="myOrder">
+							<div class="orderDetails">
+								<span><i></i>我是买家</span>
+								<p>
+									<span>待付款订单<br /><i>10</i></span>
+									<span>待发货订单<br /><i>10</i></span>
+									<span>待收货订单<br /><i>10</i></span>
+									<span>待评价订单<br /><i>10</i></span>
+								</p>
+							</div>
+							<div class="orderDetails">
+								<span><i></i>我是卖家</span>
+								<p>
+									<span>待付款订单<br /><i>10</i></span>
+									<span>待发货订单<br /><i>10</i></span>
+									<span>待收货订单<br /><i>10</i></span>
+									<span>待评价订单<br /><i>10</i></span>
+								</p>
+							</div>
+						</div>
+						<h3>我的授信</h3>
+						<div class="my-credit">
+							<dl>
+								<dt>1</dt>
+								<dd>
+									<span>先货后款</span>
+									<p>提高资金周转率</p>
+								</dd>
+							</dl>
+							<dl>
+								<dt>2</dt>
+								<dd>
+									<span>成本低</span>
+									<p>7天免息</p>
+								</dd>
+							</dl>
+							<dl>
+								<dt>3</dt>
+								<dd>
+									<span>速度快</span>
+									<p>最快当天放款</p>
+								</dd>
+							</dl>
+							<dl>
+								<dt>4</dt>
+								<dd>
+									<span>信用积累</span>
+									<p>交易信用可累积升级</p>
+								</dd>
+							</dl>
+						</div>
+						<p class="center"><a href="javascript:void(0)" class="apply">立即申请</a></p>
+						<h3>我的账户</h3>
+						<p class="gathering">
+							开户认证中<br />
+							<a class="gatherBtn disabled" href="javascript:void(0)" >立即开户</a>
+						</p>
+						<p class="gathering hide">
+							您还未完成个体/企业开户，交易款项无法正常到账<br />
+							<a class="gatherBtn" href="#" >立即开户</a>
+						</p>
+						<div class="gathering hide">
+							<div class="opened"><i></i>您已完成开户认证，享受正式会员免费发布商品、交易等所有权益</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--申请弹框-->
+		<div class="dialog dialog-apply">
+			<div class="maskbg"></div>
+			<div class="dialog-cont">
+				<a class="close" href="javascript:void(0)"></a>
+				<h3>快速申请贷款</h3>
+				<dl>
+					<dt><i>*</i>贷款种类：</dt>
+					<dd>
+						<input type="text" readonly="readonly" value="信用贷款"  />
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>申请人：</dt>
+					<dd>
+						<input type="text"  />
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>申请金额：</dt>
+					<dd>
+						<input name="money" type="text"  />
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>联系方式：</dt>
+					<dd>
+						<input name="tel" type="text"  />
+					</dd>
+				</dl>
+				<dl>
+					<dt>咨询电话：</dt>
+					<dd>
+						<span class="span-val3">021-12345678</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<button class="btn-orange">提交</button>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<script type="text/javascript">
+			//申请贷款
+			$(".apply").on("click", function() {
+				$(".dialog-apply").stop().fadeIn();
+			})
+			$(".dialog-apply .close,.dialog-apply .btn-green,.dialog-apply .maskbg").on("click", function() {
+				$(".dialog-apply").stop().fadeOut();
+			})
+		</script>
+	</body>
+
+</html>

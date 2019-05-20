@@ -1,0 +1,82 @@
+.register-success{
+    * {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    margin-top: 24px;
+    padding: 45px 0 60px 0;
+    background-color: #fff;
+    text-align: center;
+    .tip{
+        display: inline-block;
+        margin: auto;
+        height: 54px;
+        color: #333;
+        font-size: 18px;
+        &:before{
+            content: "";
+            width: 44px;
+            height: 44px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -3px;
+            margin-right: 8px;
+            background: url(../../img/login/success.png) no-repeat;
+        }
+    }
+    .tip-warn{
+        font-size: 14px;
+        color: #e52217;
+        line-height: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 800px;
+        margin: 20px auto 0;
+        >a{
+            color: #1070FF;
+        }
+    }
+    .tip-desc{
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+    }
+    .btn-group{
+        display: block;
+        margin: 40px auto 0 auto;
+        min-width: 424px;
+        height: 40px;
+        text-align: center;
+        a{
+            display: inline-block;
+            font-size: 16px;
+            color: #fff;
+            
+            &.btn-auth,&.btn-apply,&.btn-orange,&.btn-green{
+                margin-right: 22px;
+                width: 156px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                border-radius: $dev-btn-border-radius;
+            }
+            &.btn-auth{
+                background-color: $dev-color-active;
+            }
+            &.btn-apply{
+                background-color: #f9aa32;
+            }
+            &.btn-shop{
+                margin-top: 20px;
+                color: #f9aa32;
+            }
+            &.go-mall{
+                color: $dev-color-btn;
+                font-size: 16px;
+                line-height: 24px;
+                vertical-align: bottom;
+            }
+        }
+    }
+}

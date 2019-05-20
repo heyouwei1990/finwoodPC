@@ -1,0 +1,144 @@
+.accmanage-mybuy {
+    .container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px 30px 87px;
+        background-color: #fff;
+        .cont-group {
+            height: 54px;
+            padding-bottom: 22px;
+            .title {
+                float: left;
+                line-height: 32px;
+                font-size: 16px;
+            }
+            .sx-group {
+                float: right;
+                dl{
+                    margin-right: 20px;
+                }
+                dl,
+                dt,
+                dd{
+                    float: left;
+                    height: 32px;
+                    font-size: 14px;
+                    line-height: 32px;
+                }
+                dt {
+                    padding-right: 12px;
+                }
+                input {
+                    display: block;
+                    padding: 4px 10px;
+                    width: 124px;
+                    height: 34px;
+                    font-size: 14px;
+                    border: 1px solid #eee;
+                }
+                select {
+                    padding-left: 10px;
+                    width: 110px;
+                    height: 34px;
+                    line-height: 32px;
+                    font-size: 14px;
+                    color: #666;
+                    border: 1px solid #eee;
+                }
+                .searchGroup {
+                    position: relative;
+                    float: right;
+                    input {
+                        width: 220px;
+                        height: 34px;
+                        font-size: 14px;
+                        padding: 4px 10px;
+                        border: 1px solid #eee;
+                        padding-right: 50px;
+                        text-overflow: ellipsis;
+                    }
+                    span {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        z-index: 2;
+                        width: 48px;
+                        height: 34px;
+                        background: $dev-color-active url(../../img/home/sousuo.png) center center no-repeat;
+                        background-size: 52.5% 70%;
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        table {
+            width: 100%;
+            border-top: 1px solid #eee;
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 14px;
+            th{
+                height: 56px;
+                color: #333;
+                background: #eee;
+                text-align: center;
+            }
+            td{
+                color: #666;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                line-height: 24px;
+                white-space: nowrap;
+                border: 1px solid #eee;
+            }
+            .price{
+                font-size: 16px;
+                color: $dev-color-txt;
+            }
+            .look-desc{
+                color: #1070FF;
+                position: relative;
+                .desc{
+                    border: 1px solid #ddd;
+                    background-color: #fff;
+                    color: #666;
+                    padding: 10px 25px;
+                    position: absolute;
+                    right: 100%;
+                    top: 50%;
+                    z-index: 2;
+                    width:200px;
+                    min-height: 16px;
+                    white-space: normal;
+                    word-break: break-all;
+                    border-radius: 4px;
+                    display: none;
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    margin-right: 10px;
+                }
+                .desc:before,.desc:after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: -14px;
+                    margin-top: -7px;
+                    border: 7px solid transparent;
+                    border-left-color: inherit;
+                }
+                .desc:after{
+                    z-index: 2;
+                    border-left-color: #fff;
+                    right: -13px;
+                }
+                &:hover>.desc{
+                    display: block;
+                }
+            }
+        }
+    }
+}

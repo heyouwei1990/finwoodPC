@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/accmanage-myaddr.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+		<div class="accmanage-cont">
+			<div class="container clearfix">
+				<div class="cont-left"></div>
+				<script type="text/javascript">
+					$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+				</script>
+				<div class="cont-right">
+					<div class="accmanage-myaddr">
+						<h2 class="accmanage-hd">我的地址</h2>
+						<a class="btn-addmyaddr" href="javascript:void(0)">+添加新地址</a>
+						<table class="myaddr-table" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>收货人</th>
+								<th>收货人手机</th>
+								<th>地址</th>
+								<th>是否默认</th>
+								<th>操作</th>
+							</tr>
+							<tr>
+								<td>LEON</td>
+								<td>13111111111</td>
+								<td>
+									<div class="td-inner td-addr">
+										瀚达木业
+									</div>
+								</td>
+								<td>是</td>
+								<td>
+									<div class="td-inner">
+										<button class="btn-td-blue">设为默认</button>
+										<button class="btn-td-orange btn-edit-myaddr">编辑</button>
+										<button class="btn-td-green deletBtn">删除</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>LEON</td>
+								<td>13111111111</td>
+								<td>
+									<div class="td-inner td-addr">
+										瀚达木业瀚达木业瀚达木业瀚达木业瀚达木业
+									</div>
+								</td>
+								<td>是</td>
+								<td>
+									<div class="td-inner">
+										<button class="btn-td-blue">设为默认</button>
+										<button class="btn-td-orange btn-edit-myaddr">编辑</button>
+										<button class="btn-td-green deletBtn">删除</button>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<!--弹框--添加和编辑我的收货地址-->
+		<div class="dialog dialog-addmyaddr">
+			<div class="maskbg"></div>
+			<div class="dialog-cont">
+				<a class="close" href="javascript:void(0)"></a>
+				<dl>
+					<dt><i>*</i>收货人姓名</dt>
+					<dd>
+						<input class="common-input" type="text" value="" />
+						<p class="warn"><i></i>收货人姓名为必填项</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>联系电话</dt>
+					<dd>
+						<input class="common-input" type="text" value="" />
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>收货地址</dt>
+					<dd>
+						<!--<select class="common-select">
+							<option>请选择省份</option>
+						</select>-->
+						<select class="query-select">
+						  <option value="">请选择省份</option>
+						  <option value="1">广西壮族自治区</option>
+						  <option value="2">新疆维吾尔族自治区</option>
+				        </select>						
+					</dd>
+					<dd>
+						<select class="query-select">
+							<option>请选择市</option>
+						</select>
+					</dd>
+					<dd>
+						<select class="query-select">
+							<option>请选择县区</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>详细地址</dt>
+					<dd>
+						<input class="input-addr" type="text" maxlength="100" />
+						<p class="warn"><i></i>限100字</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<button class="btn-orange">保存</button>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<script src="js/lib/jquery.combo.select.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/myaddr.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.query-select').comboSelect();
+		</script>
+	</body>
+
+</html>

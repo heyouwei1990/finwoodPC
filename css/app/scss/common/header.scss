@@ -1,0 +1,178 @@
+.header {
+    &.main {
+        height: 198px;
+        .header-cont {
+            height: 50px;
+            line-height: 50px;
+            background-color: $dev-color-active;
+            color: #f5f5f5;
+            font-size: 14px;
+            .user{
+                color: #f5f5f5;
+            }
+            .hot-line {
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-top: -2px;
+                    width: 23px;
+                    height: 22px;
+                    background-image: url(../../img/home/home-icons.png);
+                    background-position: -139px -278px;
+                    background-repeat: no-repeat;
+                    margin-right: 4px;
+                    transform: scale(0.8);
+                    -ms-transform: scale(0.8);
+                }
+            }
+            .nav-group {
+                float: right;
+                .nav-item {
+                    float: left;
+                    display: block;
+                    margin: 0 10px;
+                    &.m-lr8 {
+                        margin: 0 8px;
+                    }
+                    &.m-r0 {
+                        margin-right: 0;
+                    }
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .header-search {
+            .logo {
+                float: left;
+                display: block;
+                margin-top: 20px;
+                >img{
+                    width: 240px;
+                    height: 75px;
+                    display: block;
+                }
+            }
+            .search {
+                float: left;
+                margin-left: 160px;
+                margin-top: 32px;
+                .search-cont {
+                    height: 54px;
+                    input {
+                        float: left;
+                        display: block;
+                        padding: 16px 24px;
+                        width: 442px;
+                        height: 54px;
+                        line-height: 22px;
+                        font-size: 16px;
+                        border: 1px solid #f9aa32;
+                        border-top-left-radius: $dev-btn-border-radius;
+                        border-bottom-left-radius: $dev-btn-border-radius;
+                    }
+                    .search-btn {
+                        float: left;
+                        display: block;
+                        margin-left: -1px;
+                        width: 76px;
+                        height: 54px;
+                        
+                        border-top-right-radius: $dev-btn-border-radius;
+                        border-bottom-right-radius: $dev-btn-border-radius;
+                        background: url(../../img/home/sousuo.png) no-repeat center center;
+                        background-color: #f9aa32;
+                    }
+                }
+            }
+            .search-hot {
+                margin-top: 12px;
+                margin-left: 6px;
+                @extend .clearfix;
+                dt,
+                dd {
+                    float: left;
+                    display: block;
+                    margin-right: 15px;
+                    color: #666;
+                    font-size: 14px;
+                }
+                dd {
+                    a {
+                        color: #999;
+                    }
+                }
+            }
+            .cart-enter{
+                float: right;
+                margin-top: 33px;
+                width: 192px;
+                height: 54px;
+                border: 1px solid $dev-color-btn;
+                color: $dev-color-btn;
+                border-radius: $dev-btn-border-radius;
+                text-align: center;
+                line-height: 52px;
+                font-size: 16px;
+                cursor: pointer;
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 27px;
+                    height: 25px;
+                    background-image: url(../../img/home/home-icons.png);
+                    background-repeat: no-repeat;
+                    background-position: -116px -249px;
+                    margin-top: -2px;
+                    margin-right: 10px;
+                }
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    border-radius: 10px;
+                    min-width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    background-color: $dev-color-btn;
+                    color: #fff;
+                    margin-top: -3px;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+    &.sub {
+        height: 100px;
+        background-color: #fff;
+        border-bottom: 2px solid $dev-color-active;
+        .logo {
+            float: left;
+            margin-top: 10px;
+            img {
+                display: block;
+                height: 75px;
+            }
+        }
+        .nav-group {
+            float: right;
+            padding-top: 50px;
+            .nav-item {
+                float: left;
+                a,
+                span {
+                    color: $dev-color-active;
+                    font-size: 14px;
+                }
+                span {
+                    padding: 0 25px;
+                }
+            }
+        }
+    }
+}

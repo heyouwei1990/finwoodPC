@@ -1,0 +1,115 @@
+.sidebar {
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    margin-top: -100px;
+    right: 0;
+    ul {
+        li {
+            position: relative;
+            display: block;
+            margin-bottom: 4px;
+            width: 40px;
+            height: 40px;
+            padding: 9px 9px;
+            background-color: #949494;
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(100,100,100,.6);
+            }
+            i {
+                display: inline-block;
+                width: 21px;
+                height: 20px;
+                background-image: url(../../img/home/home-icons.png);
+                background-repeat: no-repeat;
+                background-size: 120px 150px;
+                &.icon-dh {
+                    background-position: -27px -73px;
+                }
+                &.icon-kf {
+                    background-position: -27px -92px;
+                }
+                &.icon-xcx {
+                    background-position: -102px -103px;
+                    margin-left: 1px;
+                }
+                &.icon-sm {
+                    background-position: -27px -112px;
+                }
+            }
+            .fixed-tip{
+                display: none;
+                position:absolute;
+                right:40px;
+                top: 0;
+                width: 190px;
+                height: 40px;
+                text-align: center;
+            }
+            .contact-tel{
+                font-size: 16px;
+                line-height: 40px;
+                color: #fff;
+                white-space: nowrap;
+                height: 40px;
+                display: inline-block;
+                width: 190px;
+                background-color: $dev-color-active;
+            }
+            .contact-tel:before{
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                margin-top: -2px;
+                height: 24px;
+                width: 24px;
+                background-image: url(../../img/home/home-icons.png);
+                background-repeat: no-repeat;
+                background-position: -108px -156px;
+                margin-right: 10px;
+            }
+            .contact-qq{
+                display: inline-block;
+                width: 190px;
+                height: 40px;
+                line-height: 40px;
+                background-color: $dev-color-active;
+                font-size: 16px;
+                color: #fff;
+            }
+            .contact-qq:before{
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                margin-top: -2px;
+                height: 24px;
+                width: 21px;
+                background-image: url(../../img/home/home-icons.png);
+                background-repeat: no-repeat;
+                background-position: -136px -156px;
+                margin-right: 10px;
+            }
+            .ewm-box{
+                width: 180px;
+                height: 210px;
+                padding: 14px 20px;
+                border: 1px solid #eee;
+                background-color: #fff;
+                span{
+                    display: block;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                img{
+                    width: 140px;
+                    height: 140px;
+                    margin-top: 4px auto;
+                }
+            }
+            &:hover>.fixed-tip{
+                display: block;
+            }
+        }
+    }
+}

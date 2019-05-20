@@ -1,0 +1,66 @@
+.order-msg {
+    * {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    margin-bottom: 64px;
+    .container {
+        background-color: #fff;
+        padding: 0 46px 60px 46px;
+        box-sizing: border-box;
+    }
+    .title {
+        font-size: 16px;
+        margin-left: 28px;
+        margin-bottom: 14px;
+    }
+    textarea {
+        width: 100%;
+        font-size: 14px;
+        color: #666;
+        padding: 6px 10px;
+        box-sizing: border-box;
+        border: 1px solid #eee;
+        border-radius: 0;
+        overflow-x: hidden;
+    }
+    .desc {
+        margin-top: 20px;
+        padding-left: 6px;
+        p {
+            margin-bottom: 10px;
+            padding-left: 32px;
+            font-size: 14px;
+            color: #999;
+        }
+        .tip {
+            line-height: 22px;
+            font-size: 16px;
+            color: #666;
+            &:before{
+                content: "";
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                vertical-align: middle;
+                background: url(../../img/order/tip.png) no-repeat left center;
+                margin-left: -28px;
+                margin-top: -3px;
+                margin-right: 6px;
+            }
+        }
+        .btn-submit {
+            display: block;
+            margin: 35px auto 0 auto;
+            width: 128px;
+            height: 38px;
+            line-height: 38px;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            background-color: #f9aa32;
+            border-radius: $dev-btn-border-radius;
+        }
+    }
+}

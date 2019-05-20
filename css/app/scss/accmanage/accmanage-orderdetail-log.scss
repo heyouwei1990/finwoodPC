@@ -1,0 +1,24 @@
+.accmanage-orderdetail-log {
+    h2 {
+        font-size: 16px;
+        color: #333;
+        font-weight: normal;
+        margin: 0 0 15px 25px;
+    }
+    table {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        th {
+            color: #333;
+            background: #eee;
+            text-align: center;
+            line-height: 45px;
+        }
+        td {
+            line-height: 60px;
+            border-bottom:1px solid #eee ;
+        }
+    }
+}

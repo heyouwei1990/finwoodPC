@@ -1,0 +1,70 @@
+.buyzone-list {
+        * {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    margin-bottom: 64px;
+    .container {
+        box-sizing: border-box;
+        padding: 12px 46px 57px 46px;
+        background-color: #fff;
+        table {
+            width: 100%;
+            tr{
+                border-bottom: 1px solid #eee;
+            }
+            p {
+                height: 40px;
+                line-height: 40px;
+                color: #333;
+                font-size: 14px;
+                a{
+                    display: inline-block;
+                    width: 38px;
+                    height: 24px;
+                    vertical-align: -6px;
+                    background: url(../../img/buyzone/qq.png) no-repeat 14px 0;
+                }
+            }
+            .c666 {
+                color: #666;
+            }
+            .ce52{
+                color: $dev-color-txt;
+                font-size: 16px;
+            }
+            .c3bc{
+                text-align: center;
+                font-size: 14px;
+                color: $dev-color-active;
+                font-weight: bold;
+            }
+            .btn-submit{
+                display: inline-block;
+                width: 120px;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                color: #fff;
+                font-size: 14px;
+                background-color: $dev-color-btn;
+                border-radius: $dev-btn-border-radius;
+                &.dimed{
+                    cursor: default;
+                    background-color: #aaaaaa;
+                }
+            }
+            .m1{
+                margin-top: 4px;
+            }
+            .m2{
+                margin-bottom: 14px;
+            }
+            .m3{
+                width: 206px;
+                text-align: center;
+            }
+        }
+    }
+}

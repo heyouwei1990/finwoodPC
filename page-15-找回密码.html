@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/psw.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header sub"></div>
+		<script type="text/javascript">
+			$('.header.sub').load("头部-子.html");
+		</script>
+		<!--end-->
+		
+		<div class="container">
+			<!--找回密码 step1 step2 step3-->
+			<div class="findpsw-cont step1">
+				<div class="step-img"></div>
+				<!--第一步-->
+				<div class="form">
+					<ul class="form-group">
+						<li class="form-item">
+							<p class="label"><i>*</i><span>手机号：</span></p>
+							<input class="phone" type="text" placeholder="输入手机号">
+							<p class="warn"><i></i>手机格式不正确</p>
+						</li>
+						<li class="form-item pic-verifi">
+							<p class="label"><i>*</i><span>图片验证码：</span></p>
+							<input class="phone" type="text" placeholder="输入验证码">
+							<img class="verifi-img" src="img/register/yzm.jpg" alt="看不清？换一张" title="看不清？换一张" />
+						</li>
+						<li class="form-item phone-verifi">
+							<p class="label"><i>*</i><span>短信验证码：</span></p>
+							<input class="phone" type="text" placeholder="输入手机验证码">
+							<a class="verifi-btn dimed" href="javascript:void(0);">60秒重获</a>
+						</li>
+					</ul>
+					<p class="tip-msg">短信验证码已经发送至您的手机，30分钟内有效，请查收！</p>
+					<a class="btn-submit" href="javascript:void(0);">下一步</a>
+				</div>
+				<!--第二步-->
+				<div class="form hide">
+					<ul class="form-group">
+						<li class="form-item">
+							<p class="label"><i>*</i><span>设置密码：</span></p>
+							<input class="phone" type="password" placeholder="输入密码">
+							<p class="tip">8-20个字符，字母数字标<br/>点符号，不允许输入空格</p>
+						</li>
+					</ul>
+					<dl class="psw-tip">
+						<dt class="tip">密码强度：</dt>
+						<dd class="strength">低</dd>
+						<dd class="strength active">中</dd>
+						<dd class="strength">高</dd>
+					</dl>
+					<ul class="form-group">
+						<li class="form-item">
+							<p class="label"><i>*</i><span>设置密码：</span></p>
+							<input class="phone" type="password" placeholder="再次输入密码">
+							<p class="warn">密码输入不一致，请重新输入</p>
+						</li>
+					</ul>
+					<a class="btn-submit" href="javascript:void(0);">下一步</a>
+				</div>
+				<!--第三步-->
+				<div class="form hide">
+					<div class="findpsw-success">
+						<div class="tip">
+							<span>新密码设置成功！</span>
+						</div>
+						<div class="btn-group">
+							<a class="btn-login" href="page-14-登录.html">返回登录</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end-->
+		</div>
+		
+		<!--底部-->
+		<div class="footer sub"></div>
+		<script type="text/javascript">
+			$('.footer.sub').load("底部-子.html");
+		</script>
+		<!--end-->
+	</body>
+
+</html>

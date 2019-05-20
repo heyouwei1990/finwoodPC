@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.not-found-wrapper{
+    width: 1200px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -600px;
+    margin-top: -280px;
+    .not-found-img{
+        width: 600px;
+        height: 300px;
+        background: url(../../img/404/404.png) no-repeat center bottom;
+        background-size: contain;
+        margin: 0 auto 0;
+    }
+    .error-img{
+        width: 600px;
+        height: 300px;
+        background: url(../../img/404/error.png) no-repeat center bottom;
+        background-size: contain;
+        margin: 0 auto 0;
+    }
+    .not-found-msg{
+        width: 700px;
+        margin: 36px auto;
+        height: 100px;
+        background: url(../../img/404/people.png) no-repeat bottom left;
+        background-size: contain;
+        overflow: hidden;
+    }
+    .not-found-msg>p{
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #333;
+    }
+    .not-found-msg>span{
+        font-size: 16px;
+        color: #999;
+        line-height: 1.5;
+    }
+    &>a{
+        display: inline-block;
+        min-width: 180px;
+        height: 40px;
+        text-align: center;
+        color: #fff;
+        line-height: 40px;
+        border-radius: 4px;
+        font-size: 16px;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    &>a:last-child{
+        margin-right: 0;
+    }
+    .btn-green{
+        background-color: #3BC03B;
+    }
+    .btn-orange{
+        background-color: #F9AA32;
+    }
+}
+

@@ -1,0 +1,57 @@
+.dialog-confirm{
+    display: none;
+    .dialog-cont{
+        display: block;
+        padding:90px 90px 40px 90px;
+        dl{
+            dt{
+                width: 100%;
+                font-size: 14px;
+                color: #333;
+                text-align: center;
+                margin-bottom:50px ;
+                input,select,textarea{
+                    width: 120px;
+                    font-size: 14px;
+                    color: #333;
+                    border: 1px solid #eee;
+                }
+                input{
+                    height: 40px;
+                    padding: 7px 10px;
+                    line-height: 24px;
+                }
+            }
+            dd{
+                float: left;
+                width: 224px;
+                position: relative;
+                select{
+                    height: 40px;
+                }
+                textarea{
+                    height: 92px;
+                    resize: none;
+                    padding: 7px 10px;
+                    line-height: 24px;
+                }
+                button{
+                    width: 106px;
+                }
+                .center {
+                    position: absolute;
+                    left: calc(50% - 53px);
+                }
+                .cen {
+                    position: absolute;
+                    left: calc(50% - 25px);
+                }
+            }
+            &:after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+    }
+}

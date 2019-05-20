@@ -1,0 +1,117 @@
+.home-fmjr {
+    margin-top: 18px;
+//  margin-bottom: 18px;
+    margin-bottom: 64px;
+    .container {
+        background-color: #fff;
+        min-height: 338px;
+        @extend .clearfix;
+    }
+    .cont-left {
+        float: left;
+        width: 274px;
+        padding-bottom: 20px;
+        .title {
+            display: block;
+            width: 100%;
+            height: 88px;
+            line-height: 88px;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+            background-color: $dev-color-active;
+        }
+        ul {
+            padding: 27px 0 10px;
+            li {
+                display: block;
+                line-height: 50px;
+                font-size: 16px;
+                color: #333;
+                text-align: center;
+                margin-bottom: 10px;
+                i {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 40px;
+                    height: 50px;
+                    margin-right: 18px;
+                    background-image: url(../../img/home/home-icons.png);
+                    background-repeat: no-repeat;
+                }
+                &.m1 {
+                    i {
+                        background-position: -112px 0px;
+                    }
+                }
+                &.m2 {
+                    i {
+                        background-position: -112px -50px;
+                    }
+                }
+                &.m3 {
+                    i {
+                        background-position: -112px -100px;
+                    }
+                }
+            }
+        }
+        .btn-sq {
+            display: block;
+            margin: auto;
+            width: 178px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            font-size: 16px;
+            color: $dev-color-active;
+            border: 1px solid $dev-color-active;
+            border-radius: $dev-btn-border-radius;
+        }
+    }
+    .cont-right {
+        float: left;
+        width: 926px;
+        display: block;
+        text-align: center;
+        ul {
+            li {
+                float: left;
+                margin-top: 82px;
+                width: 33.333%;
+                font-size: 18px;
+                text-align: center;
+                i {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 147px;
+                    height: 147px;
+                    background: url(../../img/home/sprite-jr.png) no-repeat 0 0;
+                }
+                &.m1 {
+                    i {
+                        background-position: 0px -150px;
+                    }
+                }
+                &.m2 {
+                    i {
+                        background-position: 0px -297px;
+                    }
+                }
+                &.m3 {
+                    i {
+                        background-position: 0px -444px;
+                    }
+                }
+                .desc{
+                    margin-top: 34px;
+                    color: #666;
+                }
+                .price{
+                    margin-top: 14px;
+                    color: #f9aa32;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.editpsw-cont {
+    margin-top: 24px;
+    padding: 35px 0 70px 0;
+    background-color: #fff;
+    @extend .clearfix;
+    .form {
+        display: block;
+        margin-left: 294px;
+        .title {
+            margin-bottom: 32px;
+            padding-left: 270px;
+            font-size: 16px;
+        }
+        .form-group {
+            .form-item {
+                position: relative;
+                margin-bottom: 20px;
+                height: 40px;
+                &:last-child {
+                    margin-bottom: 10px;
+                    &.mb0 {
+                        margin-bottom: 0px;
+                    }
+                }
+                .label {
+                    float: left;
+                    display: block;
+                    padding-right: 6px;
+                    width: 160px;
+                    color: #666;
+                    font-size: 14px;
+                    text-align: right;
+                    line-height: 40px;
+                    i {
+                        padding-right: 4px;
+                        color: #e52217;
+                    }
+                }
+                input {
+                    float: left;
+                    display: block;
+                    padding: 7px 10px;
+                    width: 258px;
+                    height: 40px;
+                    font-size: 14px;
+                    color: #666;
+                    line-height: 24px;
+                    border: 1px solid #e2e2e2;
+                    border-radius: $dev-btn-border-radius;
+                }
+                .tip {
+                    float: left;
+                    display: block;
+                    padding: 4px 0 0 10px;
+                    color: #999;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                .warn{
+                    left: 168px;
+                }
+            }
+        }
+        .psw-tip {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 18px;
+            margin-left: 204px;
+            height: 16px;
+            .tip {
+                float: left;
+                display: block;
+                color: #666;
+                font-size: 14px;
+            }
+            .strength {
+                float: left;
+                margin-top: 2px;
+                margin-right: 5px;
+                padding: 0 12px;
+                color: #E2E2E2;
+                font-size: 12px;
+                line-height: 14px;
+                background-color: #E2E2E2;
+                &.active {
+                    color: #fff;
+                    background-color: #f9aa32;
+                }
+            }
+        }
+        .btn-submit {
+            display: block;
+            margin-left: 160px;
+            margin-top: 34px;
+            width: 258px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            background-color: $dev-color-active;
+            border-radius: $dev-btn-border-radius;
+        }
+    }
+}

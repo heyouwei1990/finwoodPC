@@ -1,0 +1,65 @@
+.dialog-addmyaddr{
+    .dialog-cont{
+        display: block;
+        width: 572px;
+        margin-left: -286px;
+        margin-top: -220px;
+        padding: 60px 36px 40px;
+        dl{
+            margin-bottom: 20px;
+            dt{
+                width: 110px;
+                float: left;
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+                color: #333;
+                text-align: right;
+                padding-right: 12px;
+                white-space: nowrap;
+                i{
+                    color: $dev-color-txt;
+                }
+            }
+            dd{
+                float: left;
+                margin-right: 18px;
+                position: relative;
+                input,select{
+                    font-size: 14px;
+                    color: #333;
+                    border: 1px solid #eee;
+                    height: 40px;
+                    text-overflow: ellipsis;
+                }
+                .common-input{
+                    padding: 7px 6px;
+                    line-height: 24px;
+                }
+                select{
+                    width: 117px;
+                    //position: relative;
+                }
+                .combo-select>input{
+                    width: 117px;
+                }
+                .input-addr{
+                    width: 387px;
+                    padding: 7px 6px;
+                }
+                .btn-orange{
+                    width: 106px;
+                    margin-left: 97px;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            &:after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+    }
+}

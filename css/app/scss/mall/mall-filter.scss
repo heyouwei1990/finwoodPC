@@ -1,0 +1,113 @@
+.mall-filter {
+    margin-top: 10px;
+    .container {
+        background-color: #fff;
+        padding: 0 46px;
+        box-sizing: border-box;
+        .sxtj {
+
+            height: 56px;
+            border-bottom: 1px solid #eeeeee;
+            .title {
+                float: left;
+                margin-top: 19px;
+                margin-right: 46px;
+                color: #333;
+                font-size: 16px;
+            }
+            ul {
+                float: left;
+                li {
+                    float: left;
+                    margin-top: 15px;
+                    margin-right: 15px;
+                    padding-left: 12px;
+                    height: 24px;
+                    line-height: 24px;
+                    color: #666;
+                    font-size: 14px;
+                    border: 1px solid #F5F5F5;
+                    i {
+                        cursor: pointer;
+                        display: inline-block;
+                        width: 26px;
+                        height: 26px;
+                        vertical-align: middle;
+                        background: url(../../img/mall/sprite-mall.png) no-repeat 0 0;
+                    }
+                }
+            }
+        }
+        .types,
+        .variety {
+            border-bottom: 1px solid #eee;
+            padding-top: 15px;
+            min-height: 56px;
+            .title {
+                float: left;
+                margin-right: 15px;
+                font-size: 15px;
+                line-height: 24px;
+            }
+            ul {
+                float: left;
+                max-width: 1000px;
+                overflow: hidden;
+                li {
+                    float: left;
+                    padding: 0 10px;
+                    margin-bottom: 15px;
+                    margin-right: 15px;
+                    height: 26px;
+                    line-height: 26px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    &.active,
+                    &:hover {
+                        color: #fff;
+                        background-color: #f9aa32;
+                        border-radius: $dev-btn-border-radius;
+                    }
+                }
+            }
+        }
+        .search {
+            padding: 20px 0 30px 0;
+            ul {
+                li {
+                    float: left;
+                    color: #666;
+                    font-size: 14px;
+                    margin-right: 60px;
+                    i{
+                        float: left;
+                        display: block;
+                        line-height: 32px;
+                        padding-right: 10px;
+                    }
+                    input {
+                        display: block;
+                        float: left;
+                        border: 1px solid #F5F5F5;
+                        height: 30px;
+                        line-height: 22px;
+                        width: 126px;
+                        padding:4px 10px;
+                    }
+                }
+            }
+            a{
+                float: left;
+                display: block;
+                width: 90px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                color: #fff;
+                font-size: 14px;
+                background-color: $dev-color-active;
+                border-radius: $dev-btn-border-radius;
+            }
+        }
+    }
+}

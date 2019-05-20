@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/order.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--步骤-->
+		<div class="order-succ">
+			<div class="container">
+				<!--step1-5是进度-->
+				<ul class="step-group step1">
+					<li class="m1">
+						<i></i>
+						<h6>提交订单</h6>
+					</li>
+					<li class="m0">
+						<i></i>
+					</li>
+					<li class="m2">
+						<i></i>
+						<h6>付款</h6>
+					</li>
+					<li class="m0">
+						<i></i>
+					</li>
+					<li class="m3">
+						<i></i>
+						<h6>发货</h6>
+					</li>
+					<li class="m0">
+						<i></i>
+					</li>
+					<li class="m4">
+						<i></i>
+						<h6>交易完成</h6>
+					</li>
+					<!--<li class="m0">
+						<i></i>
+					</li>
+					<li class="m5">
+						<i></i>
+						<h6>评价</h6>
+					</li>-->
+				</ul>
+				<p class="tip"><i></i><span>订单提交成功！交易专员稍后将联系您确认最终采购量及金额</span></p>
+				<p class="time">请您在提交订单后<i></i><span>24小时</span>内确认并付款，否则订单将取消</p>
+				<p class="desc">订单号：<span class="orderid">FM201710048901</span>，订单预付金额：<span class="price">￥89760元</span></p>
+				<a class="btn-orange btn-go-pay" href="#">去付款</a>
+			</div>
+		</div>
+		<!--end-->
+		<!--线下支付弹窗-->
+		<div class="order-paydialog">
+			<div class="maskbg"></div>
+			<div class="table">
+				<div class="table-cell">
+					<div class="container">
+						<a href="javascript:void(0)" class="close"></a>
+						<ul>
+							<li class="clearfix">
+								<dl>
+									<dt>公司抬头</dt>
+									<dd>
+										<input type="text" value="" placeholder="请输入公司抬头" />
+										<p class="warn"><i></i>请输入公司抬头。</p>
+									</dd>
+								</dl>
+							</li>
+							<li class="clearfix">
+								<dl>
+									<dt>转账金额</dt>
+									<dd>
+										<input type="text" value="" placeholder="请输入转账金额" />
+										<p class="warn dimed"><i></i>金额必须为正整数。</p>
+									</dd>
+								</dl>
+							</li>
+							<li class="clearfix">
+								<dl class="h61">
+									<dt>银行转账凭证</dt>
+									<dd>
+										<div class="btn-up">
+											<img src="img/order/product_thumbnail.png"/>
+											<input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
+										</div>
+										<p class="warn dimed"><i></i></p>
+									</dd>
+								</dl>
+							</li>
+							<li class="clearfix">
+								<dl>
+									<dt>付款说明</dt>
+									<dd class="w258">
+										<textarea rows="6"></textarea>
+									</dd>
+								</dl>
+
+							</li>
+							<li class="clearfix">
+								<dl>
+									<dt></dt>
+									<dd class="w258 h40">
+										<a class="btn-submit" href="javascript:void(0)">提交</a>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<script src="js/lib/jquery.ui.widget.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery.iframe-transport.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery.fileupload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/order-succ.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

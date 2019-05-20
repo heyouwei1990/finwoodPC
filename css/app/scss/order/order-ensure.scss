@@ -1,0 +1,179 @@
+.order-ensure{
+    .container{
+        background-color: #fff;
+        margin-bottom: 60px;
+        padding: 30px 45px 60px;
+        border: 1px solid #eee;
+    }
+    .order-module{
+        margin-bottom: 30px;
+    }
+    .order-module-hd {
+        font-size: 16px;
+        color: #333;
+        line-height: 30px;
+        display: inline-block;
+        padding-left: 25px;
+        font-weight: normal;
+        margin-bottom: 15px;
+        margin-right: 22px;
+    }
+    .order-module-hd>span{
+        font-size: 14px;
+        color: #999;
+        margin-left: 10px;
+    }
+    .info-gird {
+        padding: 16px 28px;
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #eee;
+    }
+    .info-gird>li {
+        float: left;
+        width: 33.33%;
+    }
+    .info-gird>li>.gird-line {
+        line-height: 44px;
+    }
+    .info-title {
+        font-size: 14px;
+        color: #333;
+    }
+    .info-desc {
+        font-size: 14px;
+        color: #666;
+        display: inline-block;
+    }
+    .order-table {
+        border: 1px solid #eee;
+        background-color: #fff;
+        text-align: center;
+        width: 100%;
+    }
+    .order-table th {
+        background-color: #eee;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .order-table td {
+        border-bottom: 1px solid #eee;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+    .order-table td:first-child{
+        width: 300px;
+    }
+    .order-table td:first-child>a{
+        display: table-cell;
+        padding-left: 20px;
+    }
+    .order-table tr:last-child td {
+        border-bottom: 0;
+    }
+    dl.goods {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: center;
+    }
+    dl.goods>dt {
+        display: inline-block;
+        width: 95px;
+        height: 95px;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+    dl.goods>dt>img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    dl.goods>dd {
+        display: inline-block;
+        margin-left: 20px;
+        vertical-align: middle;
+        text-align: left;
+    }
+    dl.goods>dd>span {
+        display: block;
+        color: #333;
+        line-height: 30px;
+    }
+    .price {
+        color: #e52217;
+        font-size: 16px;
+    }
+    
+    .vol {
+        font-size: 16px;
+    }
+    .order-total {
+        text-align: right;
+        font-size: 14px;
+        color: #666;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+    .red {
+        color: #e52217 !important;
+    }
+    .order-total>.red {
+        font-size: 16px;
+    }
+    .iblock-module{
+        margin-top: -20px;
+        margin-bottom: 15px;
+    }
+    .order-module .nowrap .info-desc {
+        margin-right: 18px;
+    }
+    .total-price{
+        text-align: right;
+        padding-right: 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        li{
+            line-height: 24px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            white-space: normal;
+        }
+        .price-label{
+            color: #666;
+            display: inline-block;
+        }
+        .price{
+            display: inline-block;
+            width: 108px;
+            font-weight: normal;
+        }
+    }
+    .btn-box {
+        text-align: center;
+        .btn-orange{
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+    }
+    .agree-ht {
+        color: #a6a6a6;
+        font-size: 14px;
+        baseline-shift: 1.5;
+        .agree-btn {
+            vertical-align: middle;
+        }
+        a {
+            color: #a6a6a6;
+        }
+        span {
+            color: #1070ff;
+        }
+    }
+}

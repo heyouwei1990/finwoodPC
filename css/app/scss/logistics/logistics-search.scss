@@ -1,0 +1,271 @@
+.logistics-search{
+    position: relative;
+    width: 100%;
+    height: 723px;
+    background-image: url(../../img/logistics/logis-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    .container{
+        position: relative;
+        height: 100%;
+    }
+    .search-car{
+        position: absolute;
+        left: 70px;
+        top: 145px;
+        z-index: 2;
+        width: 400px;
+        height: 432px;
+        padding-top: 38px;
+        background-color: rgba(255,255,255,.84);
+        h3{
+            width: 348px;
+            font-size: 24px;
+            color: #333;
+            font-weight: normal;
+            line-height: 1.5;
+            text-align: center;
+            position: relative;
+            margin:0 auto 12px; 
+            &:before,&:after{
+                content: "";
+                width: 115px;
+                height: 1px;
+                background-color: #d2d2d2;
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute;
+                top: 50%;
+            }
+            &:before{left: 0;}
+            &:after{right:0}
+        }
+    }
+    .search-car>dl{
+        width: 300px;
+        margin: 0 auto 12px;
+        height: 40px;
+    }
+    .search-car>dl>dt{
+        float: left;
+        width: 92px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        color: #333;
+        i{
+            display: inline-block;
+            width: 25px;
+            height: 31px;
+            background-image: url(../../img/logistics/icons.png);
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            margin-right: 12px;
+        }
+        .icon-startport{
+            background-position: 0 0;
+        }
+        .icon-endport{
+            background-position: -25px 0;
+        }
+        .icon-goods{
+            background-position: -50px 0;
+        }
+        .icon-ton{
+            background-position: -75px 0;
+        }
+    }
+    .search-car>dl>dd{
+        float: left;
+        width: 208px;
+        position: relative;
+        input{
+           width: 100%;
+           height: 40px;
+           border: 1px solid #eee;
+           border-radius: $dev-btn-border-radius; 
+           padding: 7px 10px;
+           line-height: 24px;
+           font-size: 16px;
+           color: #333;
+           background: rgba(255,255,255,.2);
+        }
+    }
+    .btn-searchcar{
+        width: 100%;
+    }
+    .warn{
+        height: 40px;
+        padding: 8px 10px;
+        background-color: #fff;
+        border: 1px solid $dev-color-txt;
+        border-radius: $dev-btn-border-radius;
+        left: 100%;
+        top: 0;
+        bottom: 0;
+        line-height: 22px;
+        &:after,&:before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            margin-top: -7px;
+            width: 0;
+            height: 0;
+            border: 7px solid transparent;
+        }
+        &:after{
+            border-right-color: #fff; 
+            z-index: 3;
+            left: -14px;
+        }
+        &:before{
+             border-right-color: $dev-color-txt; 
+            z-index: 2;
+            left: -15px;
+        }
+    }
+}
+.choose-wrapper{
+    width: 460px;
+    border: 1px solid #eee;
+    border-radius: $dev-btn-border-radius;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 99;
+    background-color: #fff;
+    padding: 6px 15px 10px;
+    display: none;
+    .choose-hd{
+        height: 36px;
+        border-bottom: 2px solid #eee;
+        white-space: nowrap;
+    }
+    .choose-hd>li{
+        float: left;
+        cursor: pointer;
+        padding-left: 17px;
+        padding-right: 17px;
+        height: 36px;
+        line-height: 34px;
+        border-bottom: 2px solid transparent;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .choose-hd>li.on,.choose-hd>li:hover{
+        color: $dev-color-txt;
+        border-bottom-color: $dev-color-txt;
+    }
+    .choose-cont{
+        
+    }
+    .choose-bd{
+        display: none;
+    }
+    .choose-bd.on{
+        display: block;
+    }
+    .checked-box{
+        margin-top: 6px;
+        overflow: hidden;
+        .checked-item{
+            float: left;
+            height: 24px;
+            padding-left: 10px;
+            padding-right: 8px;
+            line-height: 24px;
+            font-size: 14px;
+            color: #fff;
+            background-color: $dev-color-btn;
+            cursor: pointer;
+            i{
+                display: inline-block;
+                margin-left: 16px;
+            }
+        }
+    }
+    .choose-city{
+        width: 100%;
+        padding-left: 50px;
+        position: relative;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        overflow: hidden;
+        border-bottom: 1px dashed #eee;
+        dt{
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 50px;
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+            color: $dev-color-txt;
+        }
+        dd{
+            float: left;
+            width: 25%;
+            font-size: 14px;
+            color: #333;
+            line-height: 26px;
+            padding-left: 8px;
+            padding-right: 8px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        dd:hover{
+            background-color: $dev-color-txt;
+            color: #fff;
+        }
+        &:last-child{
+            border-bottom: 0;
+        }
+    }
+    .choose-county{
+        width: 100%;
+        overflow: hidden;
+        margin-top: 6px;
+        span{
+            float: left;
+            width: 25%;
+            font-size: 14px;
+            color: #333;
+            line-height: 26px;
+            padding-left: 8px;
+            padding-right: 8px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            cursor: pointer;
+            &:hover{
+                background-color: $dev-color-txt;
+                color: #fff;
+            }
+        }
+    }
+    .choose-wood{
+        overflow: hidden;
+        width: 100%;
+    }
+    .choose-wood>li{
+        width: 33.33%;
+        float: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 8px;
+        padding-right: 8px;
+        line-height: 26px;
+        color: #333;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .choose-wood>li:hover{
+        background-color: $dev-color-txt;
+        color: #fff;
+    }
+}
+

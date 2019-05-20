@@ -1,0 +1,351 @@
+.merchant-app{
+    .banner-area{
+        height: 400px;
+        background-color: #32ad61;
+        color: #fff;
+        .container{
+            height: 100%;
+            overflow: hidden;
+            padding-left: 58px;
+            background: url(../../img/wx-app/banner-icon.png) no-repeat right bottom;
+        }
+        .slogan{
+            font-size: 42px;
+            line-height: 60px;
+            margin-top: 56px;
+        }
+        .summary{
+            font-size: 28px;
+            line-height: 44px;
+        }
+        .announcement{
+            font-size: 28px;
+            margin-top: 26px;
+            line-height: 50px;
+            strong{
+                font-size: 38px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .amount{
+                font-size: 38px;
+                color: #fe9e22;
+                font-weight: bold;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        .active-time{
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 6px;
+        }
+        .btn-attempt{
+            display: block;
+            text-align: center;
+            line-height: 48px;
+            font-size: 22px;
+            height: 52px;
+            width: 152px;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 4px;
+            margin-top: 26px;
+        }
+        .btn-attempt:hover{
+            background-color: #fff;
+            color: #32ad61;
+        }
+    }
+    .section1,.section2,.section3,.section4{
+        border: 1px solid #eee;
+        background-color: #fff;
+        padding-top: 12px;
+        margin-top: 30px;
+        padding: 72px 122px 15px;
+    }
+    .section4{
+        margin-bottom: 50px;
+    }
+    .sec-hd{
+        font-size: 34px;
+        color: #333;
+        line-height: 50px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .advantage-list{
+        overflow: hidden;
+        >li{
+            float: left;
+            width: 414px;
+            margin-right: 126px;
+            margin-bottom: 80px;
+            >dl{
+                overflow: hidden;
+            }
+            dt{
+                float: left;
+                width: 126px;
+                height: 126px;
+                border-radius: 10px;
+                background-image: url(../../img/wx-app/icons.png) !important;
+                background-repeat: no-repeat;
+            }
+            dd{
+                float: left;
+                overflow: hidden;
+                margin-left: 30px;
+                padding-top: 10px;
+                width: 258px;
+                color: #333;
+                >span{
+                    font-size: 20px;
+                    line-height: 1.5;
+                }
+                .desc{
+                    font-size: 16px;
+                    line-height: 26px;
+                    margin-top: 20px;
+                }
+            }
+        }
+        >li:nth-child(even){
+            margin-right: 0;
+        }
+        >li:nth-child(1)>dl>dt{
+            background-color: $dev-color-btn;
+            background-position: 0 0;
+        }
+        >li:nth-child(2)>dl>dt{
+            background-color: $dev-color-active;
+            background-position: -126px 0;
+        }
+        >li:nth-child(3)>dl>dt{
+            background-color: #44c1f0;
+            background-position: 0 -126px;
+        }
+        >li:nth-child(4)>dl>dt{
+            background-color: #ff6159;
+            background-position: -126px -126px;
+        }
+    }
+    .flex-between{
+        margin-bottom: 50px;
+        dl{
+            width: 362px;
+            height: 462px;
+            border: 1px solid #a4e2a4;
+            box-shadow: 0 5px 10px rgba(0,0,0,.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        dt{
+            width: 100%;
+            height: 180px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 30px;
+            padding-top: 120px;
+            color: #fff;
+        }
+        dl:first-of-type>dt{
+            background: url(../../img/wx-app/top-bg1.png) no-repeat center top;
+            background-size: 100%;
+        }
+        dl:last-of-type>dt{
+            background: url(../../img/wx-app/top-bg2.png) no-repeat center top;
+            background-size: 100%;
+        }
+        dd{
+            padding: 25px 30px;
+            text-align: center;
+            background-color: #fff;
+            .desc{
+                font-size: 20px;
+                color: #333;
+                line-height: 1.5;
+            }
+            .price{
+                font-size: 20px;
+                color: $dev-color-txt;
+                line-height: 40px;
+                margin-top: 20px;
+                span{
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+            .btn-go{
+                display: block;
+                cursor: pointer;
+                text-align: center;
+                line-height: 48px;
+                font-size: 22px;
+                height: 52px;
+                width: 152px;
+                color: $dev-color-active;
+                border: 2px solid $dev-color-active;
+                border-radius: 4px;
+                margin: 36px auto 0;
+            }
+            .btn-go:hover{
+                background-color: $dev-color-active;
+                color: #fff;
+            }
+        }
+    }
+    .point-list{
+        overflow: hidden;
+        margin-bottom: 50px;
+        >li{
+            float: left;
+            margin-right: 30px;
+            width: 216px;
+            height: 180px;
+            //height: 230px;
+            padding: 40px 30px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+            &:nth-of-type(4n+0){
+                margin-right: 0;
+            }
+            .ico{
+                width: 60px;
+                height: 60px;
+                display: block;
+                margin: 0 auto 24px;
+                background-image: url(../../img/wx-app/icons.png);
+                background-repeat: no-repeat;
+            }
+            .ico-point1{
+                background-position: 0 -253px;
+            }
+            .ico-point2{
+                background-position: -61px -253px;
+            }
+            .ico-point3{
+                background-position: -122px -253px;
+            }
+            .ico-point4{
+                background-position: -183px -253px;
+            }
+            .title{
+                font-size: 24px;
+                line-height: 1.5;
+                color: #333;
+                margin-bottom: 10px;
+            }
+            .desc{
+                font-size: 16px;
+                line-height: 24px;
+                color: #333;
+            }
+        }
+    }
+    .way-list{
+        overflow: hidden;
+        >li{
+            float: left;
+            text-align: center;
+            width: 16.6666%;
+            height: 160px;
+            margin-bottom: 60px;
+            .ico{
+                display: block;
+                width: 115px;
+                height: 115px;
+                margin: 0 auto 10px;
+                background-image: url(../../img/wx-app/icons.png);
+                background-repeat: no-repeat;
+            }
+            .desc{
+                font-size: 16px;
+                color: #333;
+                line-height: 30px;
+            }
+        }
+        .ico-way1{background-position: -253px 0;}
+        .ico-way2{background-position: -369px 0;}
+        .ico-way3{background-position: -485px 0;}
+        .ico-way4{background-position: -601px 0;}
+        .ico-way5{background-position: -717px 0;}
+        .ico-way6{background-position: -833px 0;}
+        .ico-way7{background-position: -253px -116px;}
+        .ico-way8{background-position: -369px -116px;}
+        .ico-way9{background-position: -485px -116px;}
+        .ico-way10{background-position: -601px -116px;}
+        .ico-way11{background-position: -717px -116px;}
+        .ico-way12{background-position: -833px -116px;}
+    }
+}
+.dialog-apply{
+    display: none;
+    .dialog-cont{
+        display: block;
+        width: 600px;
+        height: 400px;
+        padding: 50px 130px 30px;
+        margin-left: -300px;
+        margin-top: -220px;
+        h3{
+            text-align: center;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #333;
+            font-weight: normal;
+            margin-bottom: 36px;
+        }
+        dl{
+            margin-bottom: 24px;
+            margin-left: -20px;
+            dt{
+                width: 108px;
+                height: 40px;
+                padding-right: 4px;
+                font-size: 14px;
+                color: #333;
+                line-height: 40px;
+                float: left;
+                text-align: right;
+                white-space: nowrap;
+                i{
+                    color: $dev-color-txt;
+                }
+            }
+            dd{
+                position: relative;
+                float: left;
+                width: 240px;
+                input{
+                    height: 40px;
+                    width: 100%;
+                    font-size: 14px;
+                    color: #333;
+                    border: 1px solid #eee;
+                    padding: 7px 10px;
+                    line-height: 24px;
+                }
+                .btn-green{
+                    width: 166px;
+                    margin-top: 10px;
+                }
+            }
+            &:after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+    }
+}
+.dialog-confirm{
+    .icon-succ{
+        width: 32px;
+        height: 32px;
+        margin-left: -60px;
+        margin-right: 20px;
+        background-size: 100% !important;
+    }
+}

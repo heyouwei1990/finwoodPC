@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/accmanage-myquote.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+		<div class="accmanage-cont">
+			<div class="container clearfix">
+				<div class="cont-left"></div>
+				<script type="text/javascript">
+					$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+				</script>
+				<div class="cont-right">
+					<div class="accmanage-myquote">
+						<h2 class="accmanage-hd">我的报价</h2>
+						<div class="cont-group">
+							<div class="sx-group">
+								<dl>
+									<dt>发布日期</dt>
+									<dd>
+										<input id="startTime" type="text" value="" />
+									</dd>
+									<dd>&nbsp;—&nbsp;</dd>
+									<dd>
+										<input id="endTime" type="text" value="" />
+									</dd>
+								</dl>
+								<dl>
+									<dt>状态</dt>
+									<dd>
+										<select>
+											<option value="">议价中</option>
+											<option value="">交易完成</option>
+										</select>
+									</dd>
+								</dl>
+								<div class="searchGroup">
+									<input type="text" name="" id="" value="" placeholder="品种" />
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<table border="1">
+							<tr>
+								<th>求购编号</th>
+								<th>品名</th>
+								<th>交货地</th>
+								<th>发布日期</th>
+								<th>我的报价</th>
+								<th>供应方数</th>
+								<th>报价日期</th>
+								<th>状态</th>
+							</tr>
+							<tr>
+								<td>1123</td>
+								<td>巴花</td>
+								<td>张家港</td>
+								<td>2017-9-31</td>
+								<td><span class="price">¥3500</span></td>
+								<td>100</td>
+								<td>2017-10-21</td>
+								<td>比价中</td>
+							</tr>
+							<tr>
+								<td>1123</td>
+								<td>巴花</td>
+								<td>张家港</td>
+								<td>2017-9-31</td>
+								<td><span class="price">¥3500</span></td>
+								<td>100</td>
+								<td>2017-10-21</td>
+								<td>比价中</td>
+							</tr>
+							<tr>
+								<td>1123</td>
+								<td>巴花</td>
+								<td>张家港</td>
+								<td>2017-9-31</td>
+								<td><span class="price">¥3500</span></td>
+								<td>100</td>
+								<td>2017-10-21</td>
+								<td>比价中</td>
+							</tr>
+							<tr>
+								<td>1123</td>
+								<td>巴花</td>
+								<td>张家港</td>
+								<td>2017-9-31</td>
+								<td><span class="price">¥3500</span></td>
+								<td>100</td>
+								<td>2017-10-21</td>
+								<td>比价中</td>
+							</tr>
+							<tr>
+								<td>1123</td>
+								<td>巴花</td>
+								<td>张家港</td>
+								<td>2017-9-31</td>
+								<td><span class="price">¥3500</span></td>
+								<td>100</td>
+								<td>2017-10-21</td>
+								<td>比价中</td>
+							</tr>
+						</table>
+						<div class="page_box">
+							<span class="off">首页</span>
+							<span class="on">1</span>
+							<a href="">2</a>
+							<a href="">3</a>
+							<a href="">4</a>
+							<a href="">5</a>
+							<span class="dian">...</span>
+							<a href="">9</a>
+							<a href="">下一页</a>
+							<a href="">末页</a>
+							<span class="to"><input type="text" value="1" class="jump_page"></span>
+							<span class="go">跳转</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<script src="js/lib/laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/accmanage-orderdetail.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

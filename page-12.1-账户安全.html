@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/account-security.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+		<div class="accmanage-cont">
+			<div class="container clearfix">
+				<div class="cont-left"></div>
+				<script type="text/javascript">
+					$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+				</script>
+				<div class="cont-right">
+					<!--账户安全-->
+					<div class="account-security">
+						<h2 class="accmanage-hd">账户安全</h2>
+						<div class="lv">
+							您的账户安全等级为：
+							<i></i><i></i><i class="aaa"></i>
+							<span>高</span>
+						</div>
+						<div class="editPsw">
+							<i></i>
+							<strong>修改密码</strong>
+							<span>建议修改</span>
+							<span>为了确保账户安全建议经常修改密码</span>
+							<a class="btn-edit" href="javascript:void(0)">修改</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--修改密码-->
+		<div class="dialog dialog-editPsw">
+			<div class="maskbg"></div>
+			<div class="dialog-cont">
+				<a class="close" href="javascript:void(0)"></a>
+				<dl>
+					<dt>输入旧密码：</dt>
+					<dd>
+						<input type="text" value="" placeholder="输入密码" />
+						<p class="warn"><i></i>密码不正确</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>设置新密码：</dt>
+					<dd>
+						<input type="text" value="" placeholder="输入密码" />
+						<p class="warn"><i></i>密码格式错误</p>
+						<p class="tip">8-20个字符，字母数字标<br />点符号，不允许输入空格</p>
+					</dd>
+				</dl>
+				<dl class="psw-tip">
+                    <dt class="tip">密码强度：</dt>
+                    <dd class="strength">低</dd>
+                    <dd class="strength active">中</dd>
+                    <dd class="strength">高</dd>
+                </dl>
+				<dl>
+					<dt>确认新密码：</dt>
+					<dd>
+						<input type="text" value="" placeholder="输入新密码" />
+						<p class="warn"><i></i>密码不一致</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<button class="btn-green fr">完成</button>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<script type="text/javascript">
+			$(function() {
+				//修改密码
+				$(".btn-edit").on("click", function() {
+					$(".dialog-editPsw").stop().fadeIn();
+				})
+				$(".dialog-editPsw .close,.dialog-editPsw .maskbg").on("click", function() {
+					$(".dialog-editPsw").stop().fadeOut();
+				})
+				
+			})
+		</script>
+	</body>
+
+</html>

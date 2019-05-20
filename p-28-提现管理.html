@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/accmanage-enchashment.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+		<div class="accmanage-cont">
+			<div class="container clearfix">
+				<div class="cont-left"></div>
+				<script type="text/javascript">
+					$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+				</script>
+				<div class="cont-right">
+					<div class="accmanage-enchashment">
+						<h2 class="accmanage-hd">提现管理</h2>
+						<div class="enchashment-hd">账户余额(元)</div>
+						<div class="enchashment-area">
+							<dl>
+								<dt></dt>
+								<dd>
+									<span>账户余额</span>
+									<div class="orange-price">888888.00</div>
+								</dd>
+								<dd>
+									<span>冻结金额</span>
+									<div class="orange-price">888888.00</div>
+								</dd>
+								<dd>
+									<span>可提现金额</span>
+									<p><i></i>提现到商家绑定的对公银行账户</p>
+									<div class="orange-price">888888.00</div>
+								</dd>
+							</dl>
+							<button class="btn-enchashment" disabled>申请提现</button>
+						</div>
+						<h3 class="record-hd">提现记录</h3>
+						<table class="record-table" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>类型</th>
+								<th>订单号</th>
+								<th>提现金额(元)</th>
+								<th>剩余可提现金额(元)</th>
+								<th>申请提现时间</th>
+							</tr>
+							<tr>
+								<td>账户提现</td>
+								<td>xxxxxxxxxxxxx</td>
+								<td>200000.00</td>
+								<td>1688888.00</td>
+								<td>2017-10-28 17:00:00</td>
+							</tr>
+							<tr>
+								<td>账户提现</td>
+								<td>xxxxxxxxxxxxx</td>
+								<td>200000.00</td>
+								<td>1688888.00</td>
+								<td>2017-10-28 17:00:00</td>
+							</tr>
+							<tr>
+								<td>账户提现</td>
+								<td>xxxxxxxxxxxxx</td>
+								<td>200000.00</td>
+								<td>1688888.00</td>
+								<td>2017-10-28 17:00:00</td>
+							</tr>
+							<tr>
+								<td>账户提现</td>
+								<td>xxxxxxxxxxxxx</td>
+								<td>200000.00</td>
+								<td>1688888.00</td>
+								<td>2017-10-28 17:00:00</td>
+							</tr>
+							<tr class="tr-hide">
+								<td>账户提现</td>
+								<td>xxxxxxxxxxxxx</td>
+								<td>200000.00</td>
+								<td>1688888.00</td>
+								<td>2017-10-28 17:00:00</td>
+							</tr>
+						</table>
+						<div class="clearfix">
+							<a class="btn-more fr" href="javascript:void(0)">更多</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<script src="js/app/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/accmanage-enchashment.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

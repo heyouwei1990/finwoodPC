@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/finance.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--菜单-->
+		<div class="home-nav drop-down"></div>
+		<script type="text/javascript">
+			$('.home-nav').load("template/home-nav.html");
+		</script>
+		<!--end-->
+		<!--芬木金融-->
+		<div class="fina-wrapper">
+			<div class="fina-banner">
+				<div class="container">
+					<p><i></i>年化利率低至9%,最高额度500万 </p>
+					<p><i></i>支持分批提货结款</p>
+					<a class="btn-apply" data-selected="-1" href="javascript:void(0)">马上申请 </a>
+				</div>
+			</div>
+			<ul class="container credit-list">
+				<li>
+					<i class="icon-credit-1"></i>
+					<div class="credit-name">货押融资</div>
+					<div class="credit-info">
+						<p>适合对象：持有现货</p>
+						<p>额&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;度：50-500万人民币</p>
+						<p>利&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;率：年化9-12%</p>
+					</div>
+					<a class="btn-apply" data-selected="0" href="javascript:void(0)">立即申请 </a>
+				</li>
+				<li>
+					<i class="icon-credit-2"></i>
+					<div class="credit-name">提单融资</div>
+					<div class="credit-info">
+						<p>适合对象：持有提单</p>
+						<p>额&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;度：50-500万人民币</p>
+						<p>利&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;率：年化10-12%</p>
+					</div>
+					<a class="btn-apply" data-selected="1" href="javascript:void(0)">立即申请 </a>
+				</li>
+				<li>
+					<i class="icon-credit-3"></i>
+					<div class="credit-name">信用融资</div>
+					<div class="credit-info">
+						<p>适合对象：信誉良好</p>
+						<p>额&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;度：10-100万人民币</p>
+						<p>利&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;率：年化11-15%</p>
+					</div>
+					<a class="btn-apply" data-selected="2" href="javascript:void(0)">立即申请 </a>
+				</li>
+			</ul>
+			<div class="advantage-wrap container">
+				<h2 class="advantage-hd">快速灵活，安全保障</h2>
+				<ul class="advantage-list">
+					<li>
+						<dl>
+							<dt></dt>
+							<dd>
+								<span>快速审批</span>
+								<p class="desc">在线审批，3个工作日内到账</p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt></dt>
+							<dd>
+								<span>超低利息</span>
+								<p class="desc">7天免息贷款，0压力还款</p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt></dt>
+							<dd>
+								<span>多种产品</span>
+								<p class="desc">产品额度灵活，满足不同需求</p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt></dt>
+							<dd>
+								<span>期限灵活</span>
+								<p class="desc">适用30-180天，自主选择</p>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<!--侧栏-->
+		<div class="sidebar"></div>
+		<script type="text/javascript">
+			$('.sidebar').load("template/sidebar.html");
+		</script>
+		<!--end-->
+		<!--申请弹框-->
+		<div class="dialog dialog-apply">
+			<div class="maskbg"></div>
+			<div class="dialog-cont">
+				<a class="close" href="javascript:void(0)"></a>
+				<h3>快速申请贷款</h3>
+				<dl>
+					<dt><i>*</i>贷款种类：</dt>
+					<dd>
+						<select id="creditName">
+							<option checked value="-1">请选择</option>
+							<option value="0">货押贷款</option>
+							<option value="1">提单贷款</option>
+							<option value="2">信用贷款</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>申请人：</dt>
+					<dd>
+						<input type="text"  />
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>申请金额：</dt>
+					<dd>
+						<input name="money" type="text"  />
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>联系方式：</dt>
+					<dd>
+						<input name="tel" type="text"  />
+					</dd>
+				</dl>
+				<dl>
+					<dt>咨询电话：</dt>
+					<dd>
+						<span class="span-val3">021-12345678</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<button class="btn-orange">提交</button>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!--end-->
+		<script src="js/app/finance.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

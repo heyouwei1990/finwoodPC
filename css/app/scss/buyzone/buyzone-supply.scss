@@ -1,0 +1,115 @@
+.buyzone-supply {
+        * {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: none;
+    width: 100%;
+    height: 100%;
+    .maskbg {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    .table {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .container {
+        position: relative;
+        z-index: 10;
+        display: block;
+        padding: 6px 68px 0 68px;
+        width: 572px;
+        height: 554px;
+        background-color: #fff;
+        box-sizing: border-box;
+        h2 {
+            padding-top: 30px;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        p {
+            margin-top: 22px;
+            font-size: 14px;
+            span {
+                color: #666;
+                &.price {
+                    color: $dev-color-txt;
+                }
+            }
+        }
+        ul {
+            margin-top: 20px;
+            li {
+                margin-bottom: 20px;
+                dl {
+                    float: left;
+                    font-size: 14px;
+                    line-height: 40px;
+                    dt {
+                        float: left;
+                        width: 74px;
+                        height: 40px;
+                        text-align: right;
+                        i{
+                            color: $dev-color-txt;
+                        }
+                    }
+                    dd {
+                        position: relative;
+                        float: left;
+                        width: 132px;
+                        height: 40px;
+                        &.w352 {
+                            width: 362px;
+                            height: 80px;
+                        }
+                        input {
+                            display: block;
+                            padding: 7px 10px;
+                            width: 100%;
+                            height: 40px;
+                            line-height: 24px;
+                            font-size: 14px;
+                            border: 1px solid #eee;
+                            box-sizing: border-box;
+                        }
+                        textarea {
+                            display: block;
+                            padding: 10px;
+                            width: 100%;
+                            font-size: 14px;
+                            border: 1px solid #eee;
+                            box-sizing: border-box;
+                        }
+                        .btn-submit {
+                            display: block;
+                            width: 164px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            color: #fff;
+                            font-size: 16px;
+                            background-color: $dev-color-active;
+                            border-radius: $dev-btn-border-radius;
+                        }
+                        .warn{
+                            font-size: 12px;
+                            margin-top:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

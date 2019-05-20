@@ -1,0 +1,261 @@
+.login-cont {
+    * {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    margin-top: 20px;
+    .container {
+        padding: 46px 85px;
+        box-sizing: border-box;
+        background-color: #fff;
+        background-image: url(../../img/login/login-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        @extend .clearfix;
+        .login-left {
+            float: left;
+            display: block;
+            width: 605px;
+            height: 430px;
+            padding-left: 20px;
+            position: relative;
+            >h2{
+                font-size: 40px;
+                line-height: 1.6;
+                color: #fff;
+                font-weight: normal;
+                >a{
+                    color: #3bc03b;
+                    margin-left: 30px;
+                    cursor: default;
+                }
+            }
+            >p{
+                font-size: 16px;
+                line-height: 32px;
+                color: #fff;
+                >big{
+                    font-size: 20px;
+                }
+            }
+            .slogan{
+                margin-left: -10px;
+            }
+            dl.ewm-box{
+                overflow: hidden;
+                padding: 10px;
+                width: 100%;
+                background: linear-gradient(to right, rgba(255,255,255,.2) 0, rgba(255,255,255,0) 80%);
+                position: absolute;
+                left: 20px;
+                bottom: 0;
+                dt{
+                    float: left;
+                    width: 106px;
+                    height: 106px;
+                }
+                dt>img{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+                dd{
+                    float: left;
+                    padding-top: 10px;
+                    margin-left: 20px;
+                    font-size: 14px;
+                    color: #fff;
+                    line-height: 28px;
+                }
+            }
+        }
+        .form-group {
+            float: right;
+            display: block;
+            padding: 22px 36px;
+            width: 390px;
+            height: 430px;
+            border: 1px solid #eee;
+            background-color: #fff;
+            border-radius: $dev-btn-border-radius;
+            box-sizing: border-box;
+            h3 {
+                font-size: 18px;
+                color: #333;
+                font-weight: normal;
+            }
+            .tip {
+                display: block;
+                margin-top: 18px;
+                margin-bottom: 6px;
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                color: #8a1f11;
+                font-size: 12px;
+                p {
+                    background-color: #fbe3e4;
+                    border: 1px solid #fbc2c4;
+                    border-radius: $dev-btn-border-radius;
+                    box-sizing: border-box;
+                    i {
+                        display: inline-block;
+                        padding-left: 16px;
+                        padding-right: 4px;
+                        width: 14px;
+                        height: 14px;
+                        vertical-align: -2px;
+                        background: url(../../img/login/sprite-login.png) no-repeat 16px 0;
+                    }
+                }
+                &.dimed{
+                    p{
+                        display: none;
+                    }
+                }
+            }
+            .input-group {
+                position: relative;
+                display: block;
+                margin-bottom: 18px;
+                height: 40px;
+                font-size: 16px;
+                color: #666;
+                line-height: 38px;
+                border: 1px solid #e2e2e2;
+                border-radius: $dev-btn-border-radius;
+                box-sizing: border-box;
+                overflow: hidden;
+                i {
+                    position: absolute;
+                    left: 10px;
+                    top: 9px;
+                    display: block;
+                    width: 19px;
+                    height: 18px;
+                    padding-right: 10px;
+                    border-right: 1px solid #eee;
+                    background: url(../../img/login/sprite-login.png) no-repeat 0 -14px;
+                    &.psw {
+                        background-position: 0 -32px;
+                    }
+                }
+                input {
+                    font-size: 14px;
+                    color: #666;
+                    display: block;
+                    padding: 10px 10px 10px 60px;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 0;
+                    box-sizing: border-box;
+                }
+            }
+            .btn-submit {
+                display: block;
+                width: 100%;
+                height: 40px;
+                margin-bottom: 22px;
+                line-height: 40px;
+                background-color: $dev-color-active;
+                color: #fff;
+                font-size: 16px;
+                text-align: center;
+                border-radius: $dev-btn-border-radius;
+            }
+            .way {
+                position: relative;
+                text-align: center;
+                margin-bottom: 14px;
+                span {
+                    position: relative;
+                    z-index: 1;
+                    display: inline-block;
+                    padding: 0 10px;
+                    font-size: 14px;
+                    color: #666;
+                    background-color: #fff;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #eee;
+                }
+            }
+            .btn-group {
+                height: 40px;
+                margin-bottom: 30px;
+                text-align: center;
+                a {
+                    display: inline-block;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #666;
+                    font-size: 12px;
+                    border-radius: $dev-btn-border-radius;
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        margin-top: -9px;
+                        height: 18px;
+                        width: 1px;
+                        background-color: #eee;
+                    }
+                    &:last-child:after{
+                        display: none;
+                    }
+                    &:hover{
+                        color: #333333;
+                    }
+                    &.btn-qq {
+                       color: #6ea8df;
+                        i{
+                            background-position: -25px -67px;
+                        }
+                    }
+                    &.btn-wx {
+                        color: #7ccd54;
+                        i{
+                            background-position: -58px -67px;
+                        }
+                    }
+                    &.btn-sina {
+                        background-color: #ea716e;
+                        margin-right: 0;
+                    }
+                    i{
+                        display: inline-block;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                        margin-top: -2px;
+                        background-image: url(../../img/login/sprite-login.png);
+                        background-repeat: no-repeat;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .btn-reg {
+                float: right;
+                color: #666;
+                font-size: 12px;
+                a {
+                    color: #5369d9;
+                }
+            }
+        }
+    }
+}

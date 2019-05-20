@@ -1,0 +1,69 @@
+.home-banner {
+        * {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    .img_list {
+        overflow: hidden;
+        width: 100%;
+        height: 480px;
+        li {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            //float: left;
+            margin-left: -960px;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 1;
+        }
+    }
+    .banner_focus {
+        position: absolute;
+        bottom: 70px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 3;
+        a {
+            display: inline-block;
+            margin: 0 10px;
+            width: 8px;
+            height: 8px;
+            border: 2px solid #fff;
+            background: none;
+            border-radius: 50%;
+            &.on {
+                background-color: #fff;
+            }
+        }
+    }
+    .banner_prev,
+    .banner_next {
+        display: none;
+        position: absolute;
+        top: 220px;
+        width: 40px;
+        height: 40px;
+        background-image: url(../../img/home/home-icons.png);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .banner_prev {
+        left: 50%;
+        margin-left: -670px;
+        background-position: -164px -208px;
+    }
+    .banner_next {
+        left: 50%;
+        margin-left: 630px;
+        background-position: -164px -249px;
+    }
+}

@@ -1,0 +1,150 @@
+.order-paytype {
+    * {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    .container {
+        background-color: #fff;
+        padding: 0 46px 40px 46px;
+        box-sizing: border-box;
+    }
+    .title {
+        font-size: 16px;
+        margin-left: 28px;
+        margin-bottom: 14px;
+    }
+    ul {
+        padding: 35px 28px 35px 30px;
+        border: 1px solid #eee;
+        @extend .clearfix;
+        li {
+            float: left;
+            display: block;
+            width: 390px;
+            font-size: 14px;
+            label {
+                span {
+                    display: inline-block;
+                    margin-left: 14px;
+                    width: 282px;
+                    height: 36px;
+                    line-height: 36px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #666;
+                    border: 1px solid #eee;
+                    border-radius: $dev-btn-border-radius;
+                }
+                input[type="radio"] {
+                    &:checked {
+                        &+i {
+                            &+span {
+                                color: #fff;
+                                background-color: #f9aa32;
+                            }
+                        }
+                    }
+                }
+            }
+            &.m-r20 {
+                width: 316px;
+                margin-right: 20px;
+                position: relative;
+                .info {
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    margin-left: 20px;
+                    width: 320px;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    color: #aaa;
+                }
+            }
+            &.desc {
+                width: 300px;
+                color: #999;
+                font-size: 14px;
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .pay-tab{
+        margin-top: 30px;
+        width: 1044px;
+    }
+    .pay-tab-hd{
+        width: 100%;
+        height: 41px;
+        border-bottom: 1px solid #eee;
+    }
+    .pay-tab-hd>span{
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 40px;
+        height: 40px;
+        float: left;
+        line-height: 40px;
+        font-size: 16px;
+        color: #333;
+        cursor: pointer;
+    }
+    .pay-tab-hd>span.on,
+    .pay-tab-hd>span:hover{
+        color: $dev-color-txt;
+        border-bottom: 2px solid $dev-color-txt;
+    }
+    .pay-tab-bd{
+        display: none;
+    }
+    .pay-tab-bd.on{
+        display: block;
+    }
+    .bank-list{
+        padding-top: 20px;
+    }
+    .bank-list>span{
+        float: left;
+        width: 154px;
+        height: 33px;
+        background-image: url(../../img/order/banks.png);
+        background-repeat: no-repeat;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        position: relative;
+        &.on:before{
+            content: "";
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            background-image: url(../../img/order/banks.png);
+            background-repeat: no-repeat;
+            background-position: -310px -204px;
+        }
+    }
+    .beijing{background-position: 0 0;}
+    .guangfa{background-position: 0 -34px;}
+    .jiaotong{background-position: 0 -68px;}
+    .nongye{background-position: 0 -102px;}
+    .shanghainongshang{background-position: 0 -136px;}
+    .xingye{background-position: 0 -170px;}
+    .zhongguo{background-position: 0 -204px;}
+    .gongshang{background-position: -155px 0;}
+    //.huaxia{background-position: -155px -34px;}
+    .minsheng{background-position: -155px -68px}
+    .pingan{background-position: -155px -102px;}
+    .pufa{background-position: -155px -136px;}
+    .youchu{background-position: -155px -170px;}
+    .zhongxin{background-position: -155px -204px;}
+    .guangda{background-position: -310px 0;}
+    .jianshe{background-position: -310px -34px;}
+    //.bjncsy{background-position:-310px -68px;}
+    .shanghai{background-position: -310px -102px;}
+    .shenzhenfazhan{background-position: -310px -136px;}
+    .zhaoshang{background-position: -310px -170px;}
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/finance.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--菜单-->
+		<div class="home-nav drop-down"></div>
+		<script type="text/javascript">
+			$('.home-nav').load("template/home-nav.html");
+		</script>
+		<!--end-->
+		<!--芬木金融-->
+		<div class="fina-wrapper">
+			<div class="fina-banner" style="background-image: url(img/finance/fina-banner.jpg);"></div>
+			<div class="container">
+				<div class="fina-li">
+					<div class="fina-dt fl"><img src="img/finance/finance-01.png"/></div>
+					<div class="fina-dd fr">
+						<h4>质押融资 </h4>
+						<ul>
+							<li><span>适合对象：</span>自有现货的客户</li>
+							<li><span>要求：</span>按照质押现货市价打折</li>
+							<li><span>额度：</span>50万-500万人民币</li>
+							<li><span>利率：</span>年化9%-12%</li>
+						</ul>
+					</div>
+					<a class="btn-apply" href="javascript:void(0)">立即申请</a>
+				</div>
+				<div class="fina-li">
+					<div class="fina-dt fr"><img src="img/finance/finance-02.png"/></div>
+					<div class="fina-dd fl">
+						<h4>提单融资</h4>
+						<ul>
+							<li><span>适合对象：</span>自有提单的客户</li>
+							<li><span>要求：</span>按照质押提单价值打折</li>
+							<li><span>额度：</span>50万-500万人民币</li>
+							<li><span>利率：</span>年化10%-12%</li>
+						</ul>
+					</div>
+					<a class="btn-apply" href="javascript:void(0)">立即申请</a>
+				</div>
+				<div class="fina-li">
+					<div class="fina-dt fl"><img src="img/finance/finance-03.png"/></div>
+					<div class="fina-dd fr">
+						<h4>信用借款</h4>
+						<ul>
+							<li><span>适合对象：</span>在平台交易记录良好的客户</li>
+							<li><span>要求：</span>根据交易和征信记录确定额度</li>
+							<li><span>额度：</span>10万-100万人民币</li>
+							<li><span>利率：</span>年化11%-15%</li>
+						</ul>
+					</div>
+					<a class="btn-apply" href="javascript:void(0)">立即申请</a>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<!--侧栏-->
+		<div class="sidebar"></div>
+		<script type="text/javascript">
+			$('.sidebar').load("template/sidebar.html");
+		</script>
+		<!--end-->
+		<!--申请弹框-->
+		<div class="dialog dialog-apply">
+			<div class="maskbg"></div>
+			<div class="dialog-cont">
+				<a class="close" href="javascript:void(0)"></a>
+				<h3>快速申请贷款</h3>
+				<dl>
+					<dt><i>*</i>贷款种类：</dt>
+					<dd>
+						<select>
+							<option checked value="0">请选择</option>
+							<option value="1">商业贷款</option>
+							<option value="2">公积金贷款</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>申请人：</dt>
+					<dd>
+						<input type="text"  />
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>申请金额：</dt>
+					<dd>
+						<input name="money" type="text"  />
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>联系方式：</dt>
+					<dd>
+						<input name="tel" type="text"  />
+					</dd>
+				</dl>
+				<dl>
+					<dt>咨询电话：</dt>
+					<dd>
+						<span class="span-val3">021-12345678</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<button class="btn-orange">提交</button>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!--end-->
+		<script src="js/app/finance.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

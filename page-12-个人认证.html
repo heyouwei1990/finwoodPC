@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/person-certification.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+		<div class="accmanage-cont">
+			<div class="container clearfix">
+				<div class="cont-left"></div>
+				<script type="text/javascript">
+					$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+				</script>
+				<div class="cont-right">
+					<!--个人认证-->
+					<div class="company-certification">
+						<h2 class="accmanage-hd">个人认证</h2>
+						<div class="progressBar">
+							<ul>
+								<li class="finish">
+									<i>1</i>
+									<span>提交资质</span>
+								</li>
+								<li>
+									<i>2</i>
+									<span>资质审核</span>
+								</li>
+								<li>
+									<i>3</i>
+									<span>完成</span>
+								</li>
+							</ul>
+						</div>
+						<div class="accmanage-userinfo">
+							<ul>
+								<li>
+									<dl>
+										<dt><i>*</i> 真实姓名：</dt>
+										<dd>
+											<input type="text" value="李四" readonly unselectable="on" placeholder="请输入2-4位中文" />
+											<p class="warn"><i></i>!不正确，请输入2-4位中文</p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><i>*</i> 身份证号：</dt>
+										<dd>
+											<input type="text" value="" placeholder="请输入您的正确身份证号" />
+											<p class="warn"><i></i>!身份证号不正确</p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="clearfix file-grid">
+										<div class="btn-up fl">
+											<i>*</i>
+											<div class="ie9-filter"></div>
+											<input id="fileupload1" type="file" name="files[]" data-url="server/php/" multiple>
+											<img src="img/accmanage/card1.png"/>
+											<p class="warn"><i></i>!未上传身份证正面</p>
+										</div>
+										<div class="btn-up fr">
+											<i>*</i>
+											<div class="ie9-filter"></div>
+											<input id="fileupload2" type="file" name="files[]" data-url="server/php/" multiple>
+											<img src="img/accmanage/card2.png"/>
+											<p class="warn"><i></i>!未上传身份证反面</p>
+										</div>
+									</div>
+									<p class="tip-gray">* 文件大小小于2M</p>
+								</li>
+								<li>
+									<a class="btn-save" href="javascript:void(0)">提交审核</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<script src="js/lib/jquery.ui.widget.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery.iframe-transport.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery.fileupload.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/app/person-certification.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/mall.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--菜单-->
+		<div class="home-nav drop-down"></div>
+		<script type="text/javascript">
+			$('.home-nav').load("template/home-nav.html");
+		</script>
+		<!--end-->
+		<!--商城筛选-->
+		<div class="mall-filter">
+			<div class="container">
+				<div class="sxtj clearfix">
+					<p class="title">已选条件</p>
+					<ul>
+						<li data-type="types">北美材<i></i></li>
+						<li data-type="variety">白橡<i></i></li>
+					</ul>
+				</div>
+				<div class="types clearfix">
+					<p class="title">大&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类</p>
+					<ul>
+						<li>不限</li>
+						<li>非洲材</li>
+						<li class="active">北美材</li>
+						<li>南美材</li>
+						<li>俄罗斯材</li>
+						<li>欧洲材</li>
+						<li>东南亚材</li>
+						<li>新澳材</li>
+						<li>巴新材及所罗门材</li>
+					</ul>
+				</div>
+				<div class="variety clearfix">
+					<p class="title">品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;种</p>
+					<ul>
+						<li>不限</li>
+						<li>小斑马</li>
+						<li>红橡</li>
+						<li class="active">白橡</li>
+						<li>巴花</li>
+						<li>红斑马</li>
+						<li>奥古曼</li>
+						<li>黑檀</li>
+					</ul>
+				</div>
+				<div class="search clearfix">
+					<ul>
+						<li>
+							<i>规格</i>
+							<input type="text" value="">
+						</li>
+						<li>
+							<i>产地</i>
+							<input type="text" value="">
+						</li>
+						<li>
+							<i>品牌</i>
+							<input type="text" value="">
+						</li>
+						<li>
+							<i>等级</i>
+							<input type="text" value="">
+						</li>
+					</ul>
+					<a href="javascript:void(0);">搜索</a>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		<!--商城列表-->
+		<div class="mall-list">
+			<div class="container">
+				<div class="list-head clearfix">
+					<p>排序:</p>
+					<ul>
+						<li class="active">默认</li>
+						<li class="descending">价格<i></i></li>
+						<li class="descending">上架时间<i></i></li>
+					</ul>
+					<!--<label class="c15"><input type="checkbox"><i></i>&nbsp;担保交易</label>-->
+					<p class="area">提货地区</p>
+					<select>
+						<option value="">张家港</option>
+						<option value="410881">济源市</option>
+						<option value="610100">西安市</option>
+						<option value="331000">台州市</option>
+						<option value="440600">佛山市</option>
+						<option value="310100">上海市</option>
+						<option value="340100">合肥市</option>
+						<option value="440100">广州市</option>
+						<option value="120100">天津市</option>
+						<option value="500100">重庆市</option>
+						<option value="410500">安阳市</option>
+						<option value="420100">武汉市</option>
+						<option value="360100">南昌市</option>
+						<option value="330200">宁波市</option>
+						<option value="410100">郑州市</option>
+						<option value="320200">无锡市</option>
+						<option value="320400">常州市</option>
+						<option value="320500">苏州市</option>
+						<option value="430100">长沙市</option>
+						<option value="210100">沈阳市</option>
+						<option value="330100">杭州市</option>
+						<option value="110100">北京市</option>
+						<option value="320100">南京市</option>
+						<option value="370700">潍坊市</option>
+						<option value="371600">滨州市</option>
+						<option value="510100">成都市</option>
+						<option value="530100">昆明市</option>
+						<option value="130400">邯郸市</option>
+						<option value="370900">泰安市</option>
+						<option value="310110">乌鲁木齐市</option>
+						<option value="520100">贵阳市</option>
+						<option value="220100">长春市</option>
+						<option value="370100">济南市</option>
+					</select>
+					<p class="total-li">共20条商品</p>
+				</div>
+				<div class="list-cont">
+					<ul class="th-warp">
+						<li class="m1">基本信息</li>
+						<!--<li class="m2">规格</li>-->
+						<li class="m3">供应量</li>
+						<li class="m4">挂牌价</li>
+						<!--<li class="m5">卖家</li>-->
+						<li class="m6">提货地区</li>
+						<li class="m7">挂牌时间</li>
+						<!--<li class="m8">担保交易</li>-->
+						<li class="m9">操作</li>
+					</ul>
+					<ul class="td-warp clearfix">
+						<li>
+							<a href="#">
+								<div class="m1">
+									<img src="img/mall/pic.jpg" />
+									<div class="goods-dd">
+										<div>
+											<span>品名：小斑马</span>
+											<span>等级：A级</span>
+											<!--<span>产地：印度尼西亚</span>-->
+										</div>
+										<div>产地：印度尼西亚</div>
+										<div class="break">规格：800mm*1000mm*20000cm</div>
+										<div>商家：瀚达木业</div>
+									</div>
+								</div>
+								<div class="m3">200000立方</div>
+								<div class="m4 price">¥3600~¥40000</div>
+								<div class="ellipsis m6">张家港</div>
+								<div class="m7 time">2017-10-10</div>
+							</a>
+							<div class="m9">
+								<a href="javascript:void(0)">加入购物车</a>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<div class="m1">
+									<img src="img/mall/pic.jpg" />
+									<div class="goods-dd">
+										<div>
+											<span>品名：小斑马</span>
+											<span>等级：A级</span>
+											<!--<span>产地：印度尼西亚</span>-->
+										</div>
+										<div>产地：印度尼西亚</div>
+										<div class="break">规格：44厘米*145厘米-200厘米*1分米-1.51分米</div>
+										<div>商家：瀚达木业</div>
+									</div>
+								</div>
+								<div class="m3">200000立方</div>
+								<div class="m4 price">¥3600</div>
+								<div class="ellipsis m6">张家港</div>
+								<div class="m7 time">2017-10-10</div>
+							</a>
+							<div class="m9">
+								<a href="javascript:void(0)">加入购物车</a>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<div class="m1">
+									<img src="img/mall/pic.jpg" />
+									<div class="goods-dd">
+										<div>
+											<span>品名：小斑马</span>
+											<span>等级：A级</span>
+											<!--<span>产地：印度尼西亚</span>-->
+										</div>
+										<div>产地：印度尼西亚</div>
+										<div class="break">规格：44*145*1-1.5M</div>
+										<div>商家：瀚达木业</div>
+									</div>
+								</div>
+								<div class="m3">200000立方</div>
+								<div class="m4 price">¥3600</div>
+								<div class="ellipsis m6">张家港</div>
+								<div class="m7 time">2017-10-10</div>
+							</a>
+							<div class="m9">
+								<a href="javascript:void(0)">加入购物车</a>
+							</div>
+						</li>
+						<!--<li>
+							<a href="#">
+								<div class="m1">
+										<img src="img/mall/pic.jpg" />
+										<p class="ellipsis">品名：<span>小斑马</span></p>
+										<p class="ellipsis">等级：<span>A级</span></p>
+										<p class="ellipsis">产地：<span>加蓬</span></p>
+								</div>
+								<div class="ellipsis m2">44*145*1-1.5M</div>
+								<div class="ellipsis m3">200000立方</div>
+								<div class="ellipsis m4 price">¥3600</div>
+								<div class="ellipsis m5">瀚达木业</div>
+								<div class="ellipsis m6">张家港</div>
+								<div class="m7 time">2017-10-10 09:35</div>
+								<div class="m8"><i></i></div>
+							</a>
+							<div class="m9">
+								<a href="javascript:void(0)">加入购物车</a>
+							</div>
+						</li>-->
+						
+					</ul>
+					<div class="page_box">
+						<span class="off">首页</span>
+						<span class="on">1</span>
+						<a href="">2</a>
+						<a href="">3</a>
+						<a href="">4</a>
+						<a href="">5</a>
+						<a href="">6</a>
+						<a href="">7</a>
+						<a href="">8</a>
+						<a href="">9</a>
+						<span class="dian">...</span>
+						<a href="">下一页</a>
+						<a href="">末页</a>
+						<span class="to"><input type="text" value="1" class="jump_page"></span>
+						<span class="go">跳转</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<!--侧栏-->
+		<div class="sidebar"></div>
+		<script type="text/javascript">
+			$('.sidebar').load("template/sidebar.html");
+		</script>
+		<!--end-->
+		<script src="js/app/mall.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

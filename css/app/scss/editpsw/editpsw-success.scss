@@ -1,0 +1,45 @@
+.editpsw-success{
+    margin-top: 24px;
+    padding: 110px 0 146px 0;
+    background-color: #fff;
+    text-align: center;
+    .tip{
+        display: inline-block;
+        height: 44px;
+        color: $dev-color-btn;
+        font-size: 16px;
+        &:before{
+            content: "";
+            display: inline-block;
+            width: 44px;
+            height: 44px;
+            background-image: url(../../img/login/success.png);
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            margin-top: -3px;
+            margin-right: 10px;
+        }
+    }
+
+    .btn-group{
+        display: block;
+        margin: 25px auto 0 auto;
+        width: 156px;
+        height: 40px;
+        a{
+            float: left;
+            display: block;
+            font-size: 16px;
+            color: #fff;
+            
+            &.btn-login{
+                width: 156px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                border-radius: $dev-btn-border-radius;
+                background-color: $dev-color-active;
+            }
+        }
+    }
+}

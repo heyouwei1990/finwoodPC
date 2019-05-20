@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/order.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--步骤-->
+		<div class="order-succ">
+			<div class="container">
+				<!--step1-5是进度-->
+				<ul class="step-group step1">
+					<li class="m1">
+						<i></i>
+						<h6>提交订单</h6>
+					</li>
+					<li class="m0">
+						<i></i>
+					</li>
+					<li class="m2">
+						<i></i>
+						<h6>付款</h6>
+					</li>
+					<li class="m0">
+						<i></i>
+					</li>
+					<li class="m3">
+						<i></i>
+						<h6>发货</h6>
+					</li>
+					<li class="m0">
+						<i></i>
+					</li>
+					<li class="m4">
+						<i></i>
+						<h6>交易完成</h6>
+					</li>
+					<!--<li class="m0">
+						<i></i>
+					</li>
+					<li class="m5">
+						<i></i>
+						<h6>评价</h6>
+					</li>-->
+				</ul>
+				<p class="tip"><i></i><span>订单已提交成功,请您尽快付款！</span></p>
+				<p class="time">请您在提交订单后<i></i><span>24小时</span>内完成支付，否则订单会自动取消</p>
+				<p class="desc">订单号：<span class="orderid">FM201710048901</span>，订单预付金额：<span class="price">￥89760元</span></p>
+			</div>
+		</div>
+		<!--end-->
+		<!--付款比例-->
+		<div class="order-payratio">
+			<div class="container">
+				<p class="title">付款比例</p>
+				<ul>
+					<li>
+						<label class="radio"><input name="price" type="radio" checked="checked" /><i></i><span>支付定金</span></label>
+						<p class="desc">支付金额：订单全款<span>30%   ¥XXXX</span>元</p>
+					</li>
+					<li>
+						<label class="radio"><input name="price" type="radio" /><i></i><span>支付全款</span></label>
+						<p class="desc">支付金额：订单全款<span>100%   ¥XXXX</span>元</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--end-->
+		<!--付款方式-->
+		<div class="order-paytype">
+			<div class="container">
+				<p class="title">付款方式</p>
+				<ul>
+					<li>
+						<label class="radio"><input name="bank" type="radio" checked="checked" value="1000" /><i></i><span>在线支付</span></label>
+						<div class="pay-tab">
+							<div class="pay-tab-hd clearfix">
+								<span class="on">企业支付</span>
+								<span>个人支付</span>
+							</div>
+							<div class="pay-tab-bd on">
+								<div class="bank-list">
+									<span class="gongshang on"></span>
+									<span class="nongye"></span>
+									<span class="zhongguo"></span>
+									<span class="jianshe"></span>
+									<span class="jiaotong"></span>
+									<span class="zhongxin"></span>
+									<span class="guangda"></span>
+									<span class="guangfa"></span>
+									<span class="shenzhenfazhan"></span>
+									<span class="zhaoshang"></span>
+									<span class="xingye"></span>
+									<span class="pufa"></span>
+									<span class="beijing"></span>
+									<span class="shanghainongshang"></span>
+									<span class="youchu"></span>
+								</div>
+							</div>
+							<div class="pay-tab-bd">
+								<div class="bank-list">
+									<span class="gongshang"></span>
+									<span class="nongye"></span>
+									<span class="zhongguo"></span>
+									<span class="jianshe"></span>
+									<span class="jiaotong"></span>
+									<span class="zhongxin"></span>
+									<span class="guangda"></span>
+									<span class="minsheng"></span>
+									<span class="guangfa"></span>
+									<span class="zhaoshang"></span>
+									<span class="xingye"></span>
+									<span class="pufa"></span>
+									<span class="beijing"></span>
+									<span class="shanghai"></span>
+									<span class="pingan"></span>
+									<span class="youchu"></span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="m-r20">
+						<label class="radio"><input name="bank" type="radio" value="1001"/><i></i><span>线下转账</span></label>
+						<div class="info">
+							银行：招商银行股份有限公司上海宜山路支行<br />
+							户名：上海芬木网络科技发展有限公司<br />
+							账号：121925056910102
+						</div>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		<!--end-->
+		<!--芬木白条-->
+		<div class="order-ious">
+			<div class="container">
+				<p class="title">芬木信用</p>
+				<div class="cont">
+					<div class="sx-group">
+						<label class="c17"><input type="checkbox"><i></i><span>&nbsp;使用信用支付</span></label>
+						<span class="desc">（当前可用额度为：50000元，最多使用订单全款金额的50%,支付账号抬头必须和企业认证公司抬头保持一致。）</span>
+					</div>
+					<div class="price">
+						<input type="text" value="" placeholder="输入信用支付金额" />
+						<span>元</span>
+					</div>
+					<div class="agree-cont">
+						<label><input  type="checkbox" checked="checked"><i></i>&nbsp;已阅读并接受</label>
+						<a href="page-9-芬木网用户服务协议.html" target="_blank">《<span>芬木信用服务合同</span>》</a>
+					</div>
+				</div>
+				<div class="agree-cont">
+					<div class="agree-ht">
+						<label><input  type="checkbox" checked="checked"><i></i>&nbsp;已阅读并接受</label>
+						<a href="page-9-芬木网用户服务协议.html" target="_blank">《<span>芬木网在线交易合同</span>》</a>
+					</div>
+				</div>
+				<a class="btn-submit" href="javascript:void(0)">立即支付</a>
+			</div>
+		</div>
+		<!--end-->
+		<!--线下支付弹窗-->
+		<div class="order-paydialog">
+			<div class="maskbg"></div>
+			<div class="table">
+				<div class="table-cell">
+					<div class="container">
+						<a href="javascript:void(0)" class="close"></a>
+						<ul>
+							<li class="clearfix">
+								<dl>
+									<dt>公司抬头</dt>
+									<dd>
+										<input type="text" value="" placeholder="请输入公司抬头" />
+										<p class="warn"><i></i>请输入公司抬头。</p>
+									</dd>
+								</dl>
+							</li>
+							<li class="clearfix">
+								<dl>
+									<dt>转账金额</dt>
+									<dd>
+										<input type="text" value="" placeholder="请输入转账金额" />
+										<p class="warn dimed"><i></i>金额必须为正整数。</p>
+									</dd>
+								</dl>
+							</li>
+							<li class="clearfix">
+								<dl class="">
+									<dt>银行转账凭证</dt>
+									<dd>
+										<div class="btn-up">
+											<img src="img/order/product_thumbnail.png"/>
+											<input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
+										</div>
+										<p class="warn dimed"><i></i></p>
+									</dd>
+								</dl>
+							</li>
+							<li class="clearfix">
+								<dl>
+									<dt>付款说明</dt>
+									<dd class="w258">
+										<textarea rows="6"></textarea>
+									</dd>
+								</dl>
+
+							</li>
+							<li class="clearfix">
+								<dl>
+									<dt></dt>
+									<dd class="w258 h40">
+										<a class="btn-submit" href="javascript:void(0)">提交</a>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<script src="js/lib/jquery.ui.widget.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery.iframe-transport.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery.fileupload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/order-succ.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

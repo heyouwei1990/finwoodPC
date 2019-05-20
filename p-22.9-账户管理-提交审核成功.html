@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/accmanage-open-accout.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header sub"></div>
+		<script type="text/javascript">
+			$('.header.sub').load("头部-子.html");
+		</script>
+		<!--end-->
+		<div class="container">
+			<!--提交审核成功-->
+			<div class="open-success">
+				<div class="tip">
+					<span>提交审核成功！</span>
+				</div>
+				<div class="progressBar">
+					<ul>
+						<li class="finish">
+							<i>1</i>
+							<span>提交资质</span>
+						</li>
+						<li class="">
+							<i>2</i>
+							<span>资质审核</span>
+						</li>
+						<li>
+							<i>3</i>
+							<span>完成</span>
+						</li>
+					</ul>
+				</div>
+				<p class="tip-warn">我们会在1个工作日内完成审核</p>
+				<p class="tip-info">审核结果将通过手机短信的方式告知，敬请留意</p>
+				<p class="timeout"><span>3</span>秒后自动跳转页面,点击<a href="#">立刻跳转</a></p>
+				<div class="btn-group">
+					<a class="btn-green" href="#">返回首页 </a>
+				</div>
+			</div>
+			<!--end-->
+		</div>
+
+		<!--底部-->
+		<div class="footer sub"></div>
+		<script type="text/javascript">
+			$('.footer.sub').load("底部-子.html");
+		</script>
+		<!--end-->
+	</body>
+</html>

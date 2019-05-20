@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/accmanage-open-accout.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+			<div class="accmanage-cont">
+				<div class="container clearfix">
+					<div class="cont-left"></div>
+					<script type="text/javascript">
+						$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+					</script>
+					<div class="cont-right">
+						<div class="accmanage-open-account">
+							<h2 class="accmanage-hd">申请开户</h2>
+							<!--个人信息-->
+							<h3 class="open-hd">个人开户</h3>
+							<div class="left-switch">
+								切换 <a class="btn-switch" href="p-22.8-账户管理-企业开户.html">企业开户</a>
+							</div>
+							
+							<div class="fill-form">
+								<ul class="input-row-list">
+									<li>
+										<dl>
+											<dt><i class="required">*</i>个体户：</dt>
+											<dd>
+												<div class="radiobox">
+													<input name="selfEmployed" type="radio" checked="checked" value="0" />
+													<label>是</label>
+												</div>
+												<div class="radiobox">
+													<input name="selfEmployed" type="radio" value="1" />
+													<label>否</label>
+												</div>
+											</dd>
+										</dl>
+									</li>
+									<li></li>
+									<li>
+										<dl>
+											<dt>真实姓名：</dt>
+											<dd>
+												<span class="val-txt">张三</span>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i class="required">*</i>用户省份：</dt>
+											<dd>
+												<select class="common-select">
+													<option>请选择用户省份</option>
+												</select>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>手机号码：</dt>
+											<dd>
+												<span class="val-txt">12345678909</span>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i class="required">*</i>用户地区：</dt>
+											<dd>
+												<select class="common-select">
+													<option>请选择用户地区</option>
+												</select>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>身份证号：</dt>
+											<dd>
+												<span class="val-txt">1234567890098776</span>
+											</dd>
+										</dl>
+									</li>
+									<li data-status="selfEmployed">
+										<dl>
+											<dt><i class="required">*</i>住&emsp;&emsp;址：</dt>
+											<dd>
+												<input type="text" placeholder="请输居住地址" />
+											</dd>
+										</dl>
+									</li>
+									<li data-status="selfEmployed">
+										<dl>
+											<dt><i class="required">*</i>职&emsp;&emsp;业：</dt>
+											<dd>
+												<input type="text" placeholder="请输入个人职业" />
+											</dd>
+										</dl>
+									</li>
+								</ul>
+								<div class="filebox" data-status="selfEmployed">
+									<i class="required">*</i>
+									<div class="wrap">
+										<div class="btn-up">
+											<input type="file"  />
+											<img src="img/accmanage/file1.png"/>
+											<div class="ie9-filter"></div>
+										</div>
+										<div class="warn"><i></i></div>
+									</div>
+									<p class="tip-important">说明：复印件需加盖公司红章，文件支持1MB以内jpg、bmp、png</p>
+								</div>
+							</div>
+							<div class="btn-group">
+								<button class="btn-green">提交审核</button>
+							</div>
+							<!--end-->
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<!--企业授权书模板-->
+		<div class="dialog dialog-templet">
+			<div class="maskbg"></div>
+			<div class="dialog-cont">
+				<a href="javascript:void(0)" class="close"></a>
+				<div class="inner">
+					<img src="img/accmanage/bg.png"/>
+				</div>
+				<div class="btn-download">下载模板</div>
+			</div>
+		</div>
+		<!--end-->
+		<script src="js/lib/laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/accmanage-open-account.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

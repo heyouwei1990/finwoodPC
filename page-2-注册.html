@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/login-regi.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header sub"></div>
+		<script type="text/javascript">
+			$('.header.sub').load("头部-子.html");
+		</script>
+		<!--end-->
+		
+		<div class="container">
+			<div class="register-cont">
+				<div class="reg-step step1"></div>
+				<!--注册-->
+				<div class="register-wrap">
+					<div class="form">
+						<!--<p class="title">会员注册</p>-->
+						<ul class="form-group">
+							<li class="form-item err">
+								<p class="label"><i>*</i><span>手机号：</span></p>
+								<input class="phone" type="text" placeholder="输入手机号">
+								<p class="tip">作为登录用户名<br/>请输入你常用手机号</p>
+								<p class="warn"><i></i>手机号不对</p>
+							</li>
+							<!--<li class="form-item pic-verifi">
+								<p class="label"><i>*</i><span>图片验证码：</span></p>
+								<input class="phone" type="text" placeholder="输入验证码">
+								<img class="verifi-img" src="img/register/yzm.jpg" alt="看不清？换一张" title="看不清？换一张" />
+								<p class="warn"><i></i>验证码不对</p>
+							</li>
+							<li class="form-item phone-verifi">
+								<p class="label"><i>*</i><span>短信验证码：</span></p>
+								<input class="phone" type="text" placeholder="输入手机验证码">
+								<a class="verifi-btn" href="javascript:void(0);">获取验证码</a>
+								<p class="warn"><i></i>验证码不对</p>
+							</li>-->
+							<li class="form-item">
+								<p class="label"><i>*</i><span>设置密码：</span></p>
+								<input class="phone" type="text" placeholder="输入密码">
+								<p class="tip">8-20个字符，字母数字标<br/>点符号，不允许输入空格</p>
+								<p class="warn"><i></i>密码不能为空</p>
+							</li>
+							<li class="form-item">
+								<p class="label"><span>推荐人：</span></p>
+								<input class="referee" type="text" placeholder="输入推荐人">
+								<p class="tip"></p>
+								<p class="warn"><i></i></p>
+							</li>
+						</ul>
+						<dl class="psw-tip">
+							<dt class="tip">密码强度：</dt>
+							<dd class="strength">低</dd>
+							<dd class="strength active">中</dd>
+							<dd class="strength">高</dd>
+						</dl>
+						<div class="agree-cont">
+							<label><input class="agree-btn" type="checkbox"><i></i>&nbsp;已阅读并接受</label>
+							<a href="page-9-芬木网用户服务协议.html" target="_blank">《<span>芬木网用户服务协议</span>》</a>
+						</div>
+						<button type="button" class="btn-submit" disabled>立即注册</button>
+					</div>
+					<div class="logined">
+						<p class="title">已有芬木账号？</p>
+						<p class="desc">登录芬木网，即可免费查看或在线购买全<br />国优质的木材资源，也可以免费发布木材<br />求购信息。</p>
+						<a class="btn-login" href="page-14-登录.html">去登陆<i></i></a>
+						<p class="tip">有任何问题请联系客服：021-11111111</p>
+						<div class="ad">
+							<img src="img/login/banner.png"/>
+						</div>
+					</div>
+				</div>
+				<!--end-->
+				<!--完善资料-->
+				<div class="register-fill hide">
+					<div class="fill-tip">
+						<h3>尊敬的用户，您已经注册成为芬木网的体验会员</h3>
+						<p>请完善企业基本信息，平台工作人员将在一个工作日内进行初审并联系您 <br />通过审核，成为正式会员即可免费发布货源，现货商城在线下单，实时跟踪订单动向及更多专享服务 </p>
+					</div>
+					<div class="fill-form">
+						<div class="input-row">
+							<span class="label"><i class="impotant">*</i>公司名称：</span>
+							<div class="input-box">
+								<input type="text" placeholder="请输入公司名称" />
+								<p class="warn"><i></i></p>
+							</div>
+						</div>
+						<div class="input-row">
+							<span class="label"><i class="impotant">*</i>联系姓名：</span>
+							<div class="input-box">
+								<input type="text" placeholder="请输入您的姓名" />
+								<p class="warn"><i></i></p>
+							</div>
+						</div>
+						<div class="input-row">
+							<span class="label"><i class="impotant">*</i>主营品种：</span>
+							<div class="input-box">
+								<input type="text" placeholder="请输入您的主营品种" />
+								<p class="warn"><i></i></p>
+							</div>
+						</div>
+						<div class="input-row">
+							<span class="label"><i class="impotant">*</i>地区：</span>
+							<div class="input-box">
+								<input type="text" placeholder="请输入您的所在地区" />
+								<p class="warn"><i></i></p>
+							</div>
+						</div>
+						<div class="input-row">
+							<span class="label"><i class="impotant">*</i>企业类型：</span>
+							<div class="input-box">
+								<div class="radiobox">
+									<input type="radio" name="company" />
+									<label>贸易商</label>
+								</div>
+								<div class="radiobox">
+									<input type="radio" name="company" />
+									<label>终端厂商</label>
+								</div>
+								<p class="warn"><i></i></p>
+							</div>
+						</div>
+						<div class="input-row">
+							<button class="btn-green">提交</button>
+							<a class="btn-later" href="#">以后完善</a>
+						</div>
+					</div>
+				</div>
+				<!--end-->
+				<!--成为正式会员-->
+				<div class="become-member hide">
+					<div class="mid">
+						<h3><i></i>尊敬的用户，您的基本资料已提交初审</h3>
+						<p>平台工作人员将在一个工作日内进行初审并联系您完善企业信息您也可以在 “<strong>我的芬木</strong>”会员中心首页自行完成企业实名认证，通过审核后即可成为正式会员，免费发布货源，现货商城在线下单，实时跟踪订单动向及更多专享服务</p>
+					</div>
+					<div class="delay-jump">0S后自动跳转</div>
+					<a class="direct-link" href="#">如未跳转，请点击此链接跳转</a>
+				</div>
+				<!--end-->
+			</div>
+			<!--完善资料-->
+			<!--<div class="register-success hide">
+				<div class="tip">
+					<span>恭喜您注册成功！</span>
+				</div>
+				<p class="warn">请尽快到账户管理 - 个人信息 / 企业认证完善并提交资质审核</p>
+				<p class="tip-desc">审核通过后才可正常发布求购信息及现货木材交易</p>
+				<div class="btn-group">
+					<a class="btn-auth" href="page-12-个人实名认证.html">个人实名认证</a>
+					<a class="btn-apply" href="page-11-申请企业认证.html">申请企业认证</a>
+					<a class="btn-shop" href="#">去商城&nbsp;&gt;</a>
+				</div>
+			</div>-->
+			<!--end-->
+		</div>
+		
+		<!--底部-->
+		<div class="footer sub"></div>
+		<script type="text/javascript">
+			$('.footer.sub').load("底部-子.html");
+		</script>
+		<!--end-->
+		<script src="js/app/bind.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

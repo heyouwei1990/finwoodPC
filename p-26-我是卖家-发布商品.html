@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/accmanage-goodsrelease.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+			<div class="accmanage-cont">
+				<div class="container clearfix">
+					<div class="cont-left"></div>
+					<script type="text/javascript">
+						$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+					</script>
+					<div class="cont-right">
+						<div class="accmanage-goodsrelease">
+							<h2 class="accmanage-hd">发布商品</h2>
+							<h3 class="accmanage-module-hd">基础信息</h3>
+							<div class="release-form">
+								<ul class="input-row-list">
+									<li>
+										<dl>
+											<dt><i>*</i>类目</dt>
+											<dd>
+												<select class="common-select">
+													<option>板材</option>
+												</select>
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i>*</i>品种</dt>
+											<dd>
+												<select class="common-select">
+													<option></option>
+												</select>
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i>*</i>等级</dt>
+											<dd>
+												<select class="common-select">
+													<option></option>
+												</select>
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i>*</i>厚</dt>
+											<dd class="scope-dd">
+												<input type="text"  />
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+											<dd class="line">-</dd>
+											<dd class="scope-dd">
+												<input type="text"  />
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+											<dd>
+												<select class="size-select">
+													<option>厘米</option>
+												</select>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i>*</i>品牌</dt>
+											<dd>
+												<select class="common-select">
+													<option></option>
+												</select>
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i>*</i>宽</dt>
+											<dd class="scope-dd">
+												<input type="text"  />
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+											<dd class="line">-</dd>
+											<dd class="scope-dd">
+												<input type="text"  />
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+											<dd>
+												<select class="size-select">
+													<option>厘米</option>
+												</select>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i>*</i>产地</dt>
+											<dd>
+												<select class="common-select">
+													<option></option>
+												</select>
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i>*</i>长</dt>
+											<dd class="scope-dd">
+												<input type="text"  />
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+											<dd class="line">-</dd>
+											<dd class="scope-dd">
+												<input type="text"  />
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+											<dd>
+												<select class="size-select">
+													<option>请选择</option>
+													<option>寸</option>
+													<option>厘米</option>
+													<option>分米</option>
+													<option>米</option>
+												</select>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>商品编号</dt>
+											<dd>
+												<input type="text"  />
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>计量单位</dt>
+											<dd>
+												<select class="common-select">
+													<option>厘米</option>
+												</select>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i>*</i>是否烘干</dt>
+											<dd>
+												<input type="text"  />
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i>*</i>平均方</dt>
+											<dd>
+												<input type="text"  />
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+											<dd>
+												<select class="size-select">
+													<option>请选择</option>
+													<option>寸</option>
+													<option>厘米</option>
+													<option>分米</option>
+													<option>米</option>
+												</select>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i>*</i>产品简介</dt>
+											<dd>
+												<textarea class="summary"></textarea>
+												<p class="warn"><i></i>必填项</p>
+											</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+							<h3 class="accmanage-module-hd">销售信息</h3>
+							<div class="release-form">
+								<ul class="input-row-list col2">
+									<li>
+										<dl>
+											<dt>库存量</dt>
+											<dd>
+												<input type="text"  />
+											</dd>
+											<dd>
+												<span class="span-val6">立方米</span>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>销售量</dt>
+											<dd>
+												<input type="text"  />
+											</dd>
+											<dd>
+												<span class="span-val6">立方米</span>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>单价</dt>
+											<dd>
+												<input type="text"  />
+											</dd>
+											<dd><span class="span-val6">元</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><i>*</i>可否议价</dt>
+											<dd>
+												<select class="common-select">
+													<option></option>
+												</select>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>预付比例</dt>
+											<dd>
+												<select class="common-select">
+													<option></option>
+												</select>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>担保交易</dt>
+											<dd>
+												<select class="common-select">
+													<option></option>
+												</select>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>提货仓库</dt>
+											<dd>
+												<select class="local-select">
+													<option></option>
+												</select>
+												<select class="local-select">
+													<option></option>
+												</select>
+												<select class="local-select">
+													<option></option>
+												</select>
+											</dd>
+											<!--<dd>
+												<button id="btn-setaddr" class="btn-green">添加</button>
+											</dd>-->
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>地址</dt>
+											<dd>
+												<span class="span-val6">江苏省张家港市金港镇XX路XX号</span>
+											</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+							<h3 class="accmanage-module-hd">图片信息<span class="file-tip">（提示：至少上传一张长宽为750-1500像素1MB以内的正方形图片！）</span></h3>
+							<div class="release-form no-border">
+								<ul class="file-img-list">
+									<li>
+										<div class="file-img">
+											<input type="file"  />
+											<label></label>
+											<img src="img/accmanage/goods.png"/>
+											<div class="ie9-filter"></div>
+										</div>
+										<button>移除</button>
+									</li>
+									<li>
+										<div class="file-img">
+											<img src="img/accmanage/goods.png"/>
+											<input type="file"  />
+											<label></label>
+											<div class="ie9-filter"></div>
+										</div>
+										<button>移除</button>
+									</li>
+									<li>
+										<div class="file-img">
+											<input type="file"  />
+											<label></label>
+											<div class="ie9-filter"></div>
+										</div>
+										<button>移除</button>
+									</li>
+									<li>
+										<div class="file-img">
+											<input type="file"  />
+											<label></label>
+											<div class="ie9-filter"></div>
+										</div>
+										<button>移除</button>
+									</li>
+									<li>
+										<div class="file-img">
+											<input type="file"  />
+											<label></label>
+											<div class="ie9-filter"></div>
+										</div>
+										<button>移除</button>
+									</li>
+								</ul>
+							</div>
+							<p class="release-desc">说明：已上架商品修改后自动下架，需平台审核后重新上架</p>
+							<div class="ctrl-btns">
+								<button class="btn-green">新增商品</button>
+								<button class="btn-green">返回列表</button>
+								<button class="btn-green">删除商品</button>
+								<button class="btn-green">上架</button>
+								<button class="btn-green">下架</button>
+								<button class="btn-green">发布刷新</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<!--添加地址弹框-->
+		<div class="dialog dialog-setaddr">
+			<div class="maskbg"></div>
+			<div class="dialog-cont">
+				<a class="close" href="javascript:void(0)"></a>
+				<dl>
+					<dt>仓库名称：</dt>
+					<dd>
+						<input type="text" value="" maxlength="100" />
+						<p class="warn"><i></i>限定100字</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>省：</dt>
+					<dd>
+						<select class="common-select">
+							<option value=""></option>
+						</select>
+						<dd>
+							<span></span>
+						</dd>
+					</dd>
+				</dl>
+				<dl>
+					<dt>市：</dt>
+					<dd>
+						<select class="common-select">
+							<option value=""></option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt>详细地址：</dt>
+					<dd>
+						<textarea maxlength="100"></textarea>
+						<div class="font-limited">100字</div>
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<button class="btn-green fl">取消</button>
+						<button class="btn-orange fr">添加并使用</button>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!--end-->
+		<script src="js/app/goodsrelease.js"></script>
+	</body>
+
+</html>

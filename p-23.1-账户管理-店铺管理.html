@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/accmanage-shopmanage.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+		<div class="accmanage-cont">
+			<div class="container clearfix">
+				<div class="cont-left"></div>
+				<script type="text/javascript">
+					$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+				</script>
+				<div class="cont-right">
+					<div class="accmanage-userinfo accmanage-shopmanage">
+						<h2 class="accmanage-hd">店铺管理</h2>
+						<ul>
+							<li class="mb10">
+								<dl>
+									<dt>店铺名称：</dt>
+									<dd>
+										<input type="text" value="12" placeholder="瀚达木业旗舰店" />
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>店铺头部Banner：</dt>
+									<dd class="btn-up hd-banner">
+										<input id="fileupload1" type="file" name="files[]" data-url="server/php/" multiple>
+										<img src="img/accmanage/banner1.png"/>
+										<div class="ie9-filter"></div>
+										<!--<p class="warn"><i></i>!您未上传图片</p>-->
+									</dd>
+									<dd class="tip-gray">（尺寸1200*130），不大于1M</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>店铺广告：</dt>
+									<dd class="btn-up ad-img">
+										<input id="fileupload1" type="file" name="files[]" data-url="server/php/" multiple>
+										<img src="img/accmanage/banner2.png"/>
+										<div class="ie9-filter"></div>
+										<!--<p class="warn"><i></i>!您未上传图片</p>-->
+									</dd>
+									<dd class="tip-gray">（尺寸900*360），不大于1M</dd>
+								</dl>
+							</li>
+							<!--<li>
+								<dl>
+									<dt>服务电话：</dt>
+									<dd>
+										<input type="text" value="" placeholder="400 180 6255" />
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>工作时间：</dt>
+									<dd>
+										<input type="text" value="" placeholder="9:00~22:00" />
+									</dd>
+								</dl>
+							</li>-->
+							<li>
+								<dl>
+									<dt>公司简介：</dt>
+									<dd class="w258">
+										<span class="font-limited">限200字</span>
+										<textarea rows="9" placeholder="请输入200字以内公司简介" maxlength="200"></textarea>
+										<p class="warn"><i></i>!已超出200字</p>
+									</dd>
+									
+								</dl>
+								<a class="btn-save" href="javascript:void(0)">保存</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<script src="js/lib/jquery.ui.widget.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery.iframe-transport.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery.fileupload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/accmanage-shopmanage.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

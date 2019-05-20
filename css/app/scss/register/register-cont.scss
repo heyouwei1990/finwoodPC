@@ -1,0 +1,478 @@
+.register-cont {
+//  * {
+//      -moz-box-sizing: content-box;
+//      -webkit-box-sizing: content-box;
+//      box-sizing: content-box;
+//  }
+    margin-top: 24px;
+    overflow: hidden;
+    padding: 45px 0 40px 0;
+    background-color: #fff;
+    .reg-step{
+        width: 1040px;
+        height: 40px;
+        margin: 0 auto 40px;
+        background: url(../../img/login/reg-step.png) no-repeat;
+        &.step1{
+            background-position: 0 0;
+        }
+        &.step2{
+            background-position: 0 -40px;
+        }
+        &.step3{
+            background-position: 0 -80px;
+        }
+    }
+    .register-wrap{
+        @extend .clearfix;
+    }
+    .form {
+        float: left;
+        display: block;
+        width: 668px;
+        border-right: 1px solid #eee;
+        .title {
+            margin-left: 260px;
+            margin-bottom: 45px;
+            font-size: 22px;
+        }
+        .form-group {
+            .form-item {
+                position: relative;
+                margin-bottom: 20px;
+                height: 40px;
+                &:last-child {
+                    margin-bottom: 16px;
+                }
+                .label {
+                    float: left;
+                    display: block;
+                    padding-right: 6px;
+                    width: 166px;
+                    color: #666;
+                    font-size: 14px;
+                    text-align: right;
+                    line-height: 40px;
+                    i {
+                        padding-right: 4px;
+                        color: #e52217;
+                    }
+                }
+                .warn{
+                    left: 168px;
+                }
+                input {
+                    float: left;
+                    display: block;
+                    padding: 10px;
+                    width: 278px;
+                    height: 40px;
+                    font-size: 14px;
+                    color: #666;
+                    line-height: 18px;
+                    border: 1px solid #e2e2e2;
+                    border-radius: $dev-btn-border-radius;
+                }
+                .tip {
+                    float: left;
+                    display: block;
+                    padding: 4px 0 0 10px;
+                    color: #999;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                &.pic-verifi {
+                    input {
+                        width: 212px;
+                        border-right: none;
+                        border-bottom-right-radius: 0;
+                        border-top-right-radius: 0;
+                    }
+                    img {
+                        float: left;
+                        display: block;
+                        width: 66px;
+                        height: 40px;
+                        border: 1px solid #e2e2e2;
+                        border-bottom-right-radius: $dev-btn-border-radius;
+                        border-top-right-radius: $dev-btn-border-radius;
+                        cursor: pointer;
+                    }
+                    .tip {
+                        font-size: 12px;
+                        padding-top: 0;
+                        line-height: 40px;
+                    }
+                }
+                &.phone-verifi {
+                    input {
+                        width: 172px;
+                        border-right: none;
+                        border-bottom-right-radius: 0;
+                        border-top-right-radius: 0;
+                    }
+                    .verifi-btn {
+                        float: left;
+                        display: block;
+                        width: 106px;
+                        height: 40px;
+                        line-height: 38px;
+                        color: $dev-color-active;
+                        font-size: 14px;
+                        text-align: center;
+                        background-color: #f5f5f5;
+                        border: 1px solid #e2e2e2;
+                        border-bottom-right-radius: $dev-btn-border-radius;
+                        border-top-right-radius: $dev-btn-border-radius;
+                        &.dimed {
+                            color: #ccc;
+                            cursor: default;
+                        }
+                    }
+                }
+                &.err {
+                    &:last-child {
+                        margin-bottom: 16px;
+                    }
+                    em {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .psw-tip {
+            display: block;
+            margin-left: 204px;
+            height: 16px;
+            .tip {
+                float: left;
+                display: block;
+                color: #666;
+                font-size: 14px;
+            }
+            .strength {
+                float: left;
+                margin-top: 2px;
+                margin-right: 5px;
+                padding: 0 12px;
+                color: #E2E2E2;
+                font-size: 12px;
+                line-height: 14px;
+                background-color: #E2E2E2;
+                &.active {
+                    color: #fff;
+                    background-color: #f9aa32;
+                }
+                &.active1 {
+                    color: #fff;
+                    background-color: red;
+                }
+                &.active2 {
+                    color: #fff;
+                    background-color: #f9aa32;
+                }
+                &.active3 {
+                    color: #fff;
+                    background-color: #3bc03b;
+                }
+            }
+        }
+        .agree-cont {
+            margin: 15px 0 0 166px;
+            color: #666;
+            font-size: 14px;
+            .agree-btn {
+                vertical-align: middle;
+            }
+            a {
+                color: #666;
+            }
+            span {
+                color: $dev-color-active;
+            }
+        }
+        .btn-submit {
+            display: block;
+            margin-left: 166px;
+            margin-top: 25px;
+            width: 280px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            background-color: $dev-color-active;
+            border-radius: $dev-btn-border-radius;
+            border: 0;
+        }
+        .btn-submit:disabled{
+            background-color: #a9a9a9;
+        }
+    }
+    .logined {
+        float: left;
+        display: block;
+        padding-left: 96px;
+        border-left: 1px solid #eee;
+        margin-left: -1px;
+        .title {
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 10px;
+        }
+        .desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 24px;
+        }
+        .btn-login {
+            position: relative;
+            display: block;
+            margin-top: 24px;
+            padding-left: 20px;
+            width: 116px;
+            height: 38px;
+            line-height: 38px;
+            font-size: 16px;
+            color: $dev-color-active;
+            border: 1px solid $dev-color-active;
+            border-radius: $dev-btn-border-radius;
+            i {
+                position: absolute;
+                top: 12px;
+                right: 16px;
+                display: block;
+                width: 17px;
+                height: 17px;
+                background: url(../../img/register/btn-login-icon.png) no-repeat center center;
+            }
+        }
+        .tip {
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+            span {
+                color: #333;
+            }
+        }
+        .ad {
+            display: block;
+            margin-top: 32px;
+            width: 347px;
+            height: 136px;
+            overflow: hidden;
+            img {
+                display: block;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+}
+.bind-tab-wrap{
+    .bind-tab-hd{
+        width: 454px;
+        height: 40px;
+        margin: 0 auto;
+        border-bottom: 2px solid #eee;
+        margin-bottom: 30px;
+    }
+    .bind-tab-hd>li{
+        float: left;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        line-height: 38px;
+        font-size: 14px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        color: #999;
+    }
+    .bind-tab-hd>li.on{
+        color: $dev-color-active;
+        border-bottom: 2px solid $dev-color-active;
+    }
+    .bind-tab-bd{
+        display: none;
+    }
+    .bind-tab-bd.on{
+        display: block;
+    }
+    .unreg{
+        display: none;
+    }
+}
+.register-fill{
+    padding-bottom: 20px;
+    .fill-tip{
+        width: 506px;
+        margin: 0 auto;
+        >h3{
+            font-size: 24px;
+            color: #333;
+            line-height: 44px;
+        }
+        >p{
+            font-size: 14px;
+            color: #333333;
+            line-height: 30px;
+            text-align: left;
+            word-break: break-all;
+        }
+    }
+    .fill-form{
+        width: 380px;
+        margin: 30px auto;
+    }
+    .input-row{
+        @extend .clearfix;
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .label{
+        width: 100px;
+        text-align: right;
+        font-size: 14px;
+        color: #666;
+        line-height: 40px;
+        float: left;
+    }
+    .impotant{
+        color: $dev-color-txt;
+    }
+    .input-box{
+        position: relative;
+        width: 280px;
+        height: 40px;
+        float: left;
+    }
+    .input-box>input{
+        width: 100%;
+        height: 100%;
+        border: 1px solid #e2e2e2;
+        border-radius:$dev-btn-border-radius;
+        background-color: #fff;
+        padding: 7px 10px;
+        line-height: 24px;
+        color: #333;
+        font-size: 14px;
+    }
+    .radiobox{
+        position: relative;
+        display: inline-block;
+        margin-right: 22px;
+    }
+    .radiobox [type="radio"]{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    .radiobox>label{
+        display: inline-block;
+        font-size: 14px;
+        color:#333;
+        padding-left: 28px;
+        line-height: 40px;
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 16px;
+            height: 16px;
+            border:1px solid #666;
+            border-radius: 50%;
+            margin-top: -8px;
+            box-sizing: border-box;
+        }
+    }
+    .radiobox :checked+label{
+        &:before{
+            border-color: $dev-color-active;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            left: 1px;
+            top: 50%;
+            width: 14px;
+            height: 14px;
+            border:2px solid #fff;
+            border-radius: 50%;
+            background-color: $dev-color-active;
+            margin-top: -7px;
+            box-sizing: border-box;
+        }
+    }
+    .btn-green{
+        width: 180px;
+        margin-left: 100px;
+    }
+    .btn-later{
+        width: 80px;
+        text-align: center;
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 14px;
+        color: #999;
+        line-height: 24px;
+        vertical-align: middle;
+        &:hover{
+            color: #333;
+        }
+    }
+}
+.become-member{
+    text-align: center;
+    padding-bottom: 20px;
+    .mid{
+        display: inline-block;
+        width: 420px;
+        text-align: left;
+    }
+    h3{
+        position: relative;
+        font-size: 24px;
+        line-height: 44px;
+        font-weight: normal;
+        >i{
+            position: absolute;
+            left: -60px;
+            top: 50%;
+            margin-top: -20px;
+            width: 40px;
+            height: 40px;
+            background: url(../../img/login/success.png) no-repeat;
+            background-size: cover;
+        }
+    }
+    p{
+        font-size: 14px;
+        color: #333;
+        line-height: 30px;
+    }
+    .delay-jump{
+        color: #1070ff;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 24px;
+        margin-bottom: 10px;
+    }
+    .direct-link{
+        color: #999;
+        font-size: 14px;
+        text-decoration: underline;
+        layout-grid-char: 24px;
+        &:hover{
+            color: #333;
+        }
+    }
+}
+

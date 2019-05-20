@@ -1,0 +1,148 @@
+.accmanage-myreply {
+    padding: 18px 30px 70px;
+    table {
+        width: 100%;
+        font-size: 14px;
+        border: 1px solid #eee;
+        text-align: center;
+        th {
+            height: 56px;
+            color: #333;
+            background: #eee;
+            text-align: center;
+            border:0;
+        }
+        td {
+            color: #666;
+            height: 56px;
+            border: 0;
+            border-bottom: 1px solid #eee;
+        }
+        tr:nth-last-of-type(1) td {
+            border-bottom: none;
+        }
+        .red {
+            color: $dev-color-txt;
+        }
+        .orange {
+            color: $dev-color-btn;
+        }
+        .green {
+            color: $dev-color-active;
+        }
+        .reason {
+            color: $dev-link;
+            font-size: 12px;
+            display: inline-block;
+            margin: 7px 0 0 0;
+            position: relative;
+            cursor: default;
+            .desc{
+                border: 1px solid #ddd;
+                background-color: #fff;
+                color: #666;
+                padding: 10px 25px;
+                position: absolute;
+                right: 100%;
+                top: 50%;
+                z-index: 2;
+                width:200px;
+                min-height: 16px;
+                white-space: normal;
+                word-break: break-all;
+                border-radius: 4px;
+                display: none;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                margin-right: 10px;
+            }
+            .desc:before,.desc:after{
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: -14px;
+                margin-top: -7px;
+                border: 7px solid transparent;
+                border-left-color: inherit;
+            }
+            .desc:after{
+                z-index: 2;
+                border-left-color: #fff;
+                right: -13px;
+            }
+            &:hover>.desc{
+                display: block;
+            }
+        }
+    }
+    .cont-group {
+        height: 32px;
+        margin-bottom: 22px;
+        .title {
+            float: left;
+            line-height: 32px;
+            font-size: 16px;
+        }
+        .sx-group {
+            float: right;
+            dl{
+                margin-right: 20px;
+            }
+            dl,
+            dt,
+            dd{
+                float: left;
+                height: 32px;
+                font-size: 14px;
+                line-height: 32px;
+            }
+            dt {
+                padding-right: 12px;
+            }
+            input {
+                display: block;
+                padding: 4px 10px;
+                width: 124px;
+                height: 34px;
+                font-size: 14px;
+                border: 1px solid #eee;
+            }
+            select {
+                padding-left: 10px;
+                width: 110px;
+                height: 34px;
+                line-height: 32px;
+                font-size: 14px;
+                color: #666;
+                border: 1px solid #eee;
+            }
+            .searchGroup {
+                position: relative;
+                float: right;
+                span {
+                    display: block;
+                    width: 48px;
+                    height: 34px;
+                    background: $dev-color-active url(../../img/home/sousuo.png) center center no-repeat;
+                    background-size: 52.5% 70%;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .price{
+        color: $dev-color-txt;
+        font-size: 16px;
+    }
+}
+
+//.dialog-setaddr .dialog-cont {
+//  width: 550px!important;
+//  height: 360px!important;
+//  margin-left: -225px;
+//  margin-top: -180px;
+//  .center {
+//      left: calc(50% - 90px)!important;
+//  }
+//}

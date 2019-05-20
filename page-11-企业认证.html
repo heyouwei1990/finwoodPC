@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/company-certification.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+		<div class="accmanage-cont">
+			<div class="container clearfix">
+				<div class="cont-left"></div>
+				<script type="text/javascript">
+					$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+				</script>
+				<div class="cont-right">
+					<!--企业认证-->
+					<div class="company-certification">
+						<h2 class="accmanage-hd">企业认证</h2>
+						<div class="progressBar">
+							<ul>
+								<li class="finish">
+									<i>1</i>
+									<span>提交资质</span>
+								</li>
+								<li class="finish">
+									<i>2</i>
+									<span>资质审核</span>
+								</li>
+								<li>
+									<i>3</i>
+									<span>完成</span>
+								</li>
+							</ul>
+						</div>
+						<div class="accmanage-userinfo">
+							<ul>
+								<li class="mb10">
+									<dl>
+										<dt><i>*</i> 认证企业名称：</dt>
+										<dd>
+											<input type="text" value="" placeholder="请输入您的企业名称" />
+										</dd>
+									</dl>
+								</li>
+								<li class="mb10">
+									<dl>
+										<dt>三证合一：</dt>
+										<dd>
+											<label class="sex"><input name="sex" type="radio" checked="checked" /><i></i><span>是</span></label>
+											<label class="sex"><input name="sex" type="radio" /><i></i><span>否</span></label>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><i>*</i> 营业执照代码：</dt>
+										<dd>
+											<input type="text" value="" placeholder="" />
+										</dd>
+										<dd class="tip-in">
+											<a href=""></a>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><i>*</i> 联系人：</dt>
+										<dd>
+											<input type="text" value="" placeholder="请输入您的企业联系人姓名" />
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><i>*</i> 电话：</dt>
+										<dd>
+											<input type="text" value="" placeholder="请输入您的企业联系方式" />
+											<p class="warn"><i></i>企业联系方式为必填项</p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><i>*</i></dt>
+										<dd>
+											<div class="btn-up">
+												<div class="ie9-filter"></div>
+												<input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
+												<img src="img/accmanage/yangben.png"/>
+												<p class="warn"><i></i>!未上传营业执照</p>
+											</div>
+											<p class="tip-gray">* 文件大小小于2M</p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<a class="btn-save" href="javascript:void(0)">提交审核</a>
+								</li>
+								<li class="end">
+									提交后我们会在一个工作日内完成审核！
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<script src="js/lib/jquery.ui.widget.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery.iframe-transport.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery.fileupload.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/app/company-certification.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

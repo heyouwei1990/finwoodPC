@@ -1,0 +1,51 @@
+.account-security {
+    padding: 18px 30px;
+    box-sizing: border-box;
+    .lv{
+        font-size: 14px;
+        margin-top: 40px;
+        i {
+           display: inline-block; 
+           width: 95px;
+           height: 9px;
+           margin-right: 12px ;
+           background: $dev-color-btn;
+        }
+        .aaa {
+            background: #AAAAAA!important;
+        }
+        span{
+            color: $dev-color-btn;
+        }
+    }
+    .editPsw {
+        margin: 80px 0 0 0;
+        font-size: 14px;
+        i {
+            display: inline-block;
+            margin-right: 6px;
+            width: 21px;
+            height: 21px;
+            vertical-align: -5px;
+            background: url(../../img/mall/sprite-mall.png) no-repeat 0 -242px;
+        }
+        strong {
+            font-weight: normal;
+            font-size: 16px;
+        }
+        span{
+            margin-left:45px ;
+        }
+        .btn-edit{
+            display: inline-block;
+            width: 105px;
+            height: 34px;
+            text-align: center;
+            line-height: 34px;
+            border-radius:4px ;
+            margin-left: 60px ;
+            background: $dev-color-active;
+            color: #fff;
+        }
+    }
+}

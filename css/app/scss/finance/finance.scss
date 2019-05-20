@@ -1,0 +1,181 @@
+.fina-wrapper{
+    width: 100%;
+    margin-bottom: 65px;
+    .fina-banner{
+        width: 100%;
+        background-image: url(../../img/finance/finance-banner.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 400px;
+        >.container{
+            padding-left: 125px;
+            padding-top: 166px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 28px;
+            color: #333;
+            >i{
+                display: inline-block;
+                vertical-align: middle;
+                margin-top: -3px;
+                margin-right: 6px;
+                width: 18px;
+                height: 16px;
+                background: url(../../img/finance/fina-icons.png) no-repeat 0 -314px;
+            }
+        }
+        .btn-apply{
+            display: block;
+            width: 160px;
+            height: 40px;
+            background-color: #f9aa32;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 40px;
+            box-shadow: 0 4px 0px #6b4916;
+            font-size: 20px;
+            color: #4a2d01;
+            margin-top: 66px;
+        }
+    }
+    .credit-list{
+        width: 1200px;
+        overflow: hidden;
+        border: 1px solid #eee;
+        background-color: #fff;
+        margin-top: 30px;
+        >li{
+            width: 33.33%;
+            float: left;
+            padding: 50px 30px 70px;
+            text-align: center;
+            >i{
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+                background-image: url(../../img/finance/fina-icons.png);
+                background-repeat: no-repeat;
+            }
+            .icon-credit-1{
+                background-position: 0 -252px;
+            }
+            .icon-credit-2{
+                background-position: -61px -252px;
+            }
+            .icon-credit-3{
+                background-position: -122px -252px;
+            }
+            .credit-name{
+                font-size: 18px;
+                color: #333;
+                line-height: 1.5;
+                margin-top: 20px;
+            }
+        }
+        .credit-info{
+            display: inline-block;
+            margin-top: 10px;
+            text-align: left;
+            >p{
+                font-size: 14px;
+                color: #333;
+                line-height: 24px;
+                margin-bottom: 10px;
+            }
+        }
+        .btn-apply{
+            display: block;
+            width: 252px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            background-color: $dev-color-active;
+            border-radius: $dev-btn-border-radius;
+            margin: 15px auto 0;
+            
+        }
+    }
+    .advantage-wrap{
+        border: 1px solid #eee;
+        background-color: #fff;
+        padding-top: 12px;
+        margin-top: 10px;
+        padding: 72px 136px 15px;
+        >h2{
+            font-size: 30px;
+            color: #333;
+            line-height: 1.5;
+            font-weight: normal;
+            text-align: center;
+        }
+        .advantage-list{
+            margin-top: 70px;
+            overflow: hidden;
+            >li{
+                float: left;
+                width: 380px;
+                margin-right: 166px;
+                margin-bottom: 80px;
+                >dl{
+                    overflow: hidden;
+                }
+                dt{
+                    float: left;
+                    width: 126px;
+                    height: 126px;
+                    border-radius: 10px;
+                    background-image: url(../../img/finance/fina-icons.png) !important;
+                    background-repeat: no-repeat;
+                }
+                dd{
+                    float: left;
+                    overflow: hidden;
+                    margin-left: 30px;
+                    padding-top: 20px;
+                    width: 224px;
+                    color: #333;
+                    >span{
+                        font-size: 20px;
+                        line-height: 1.5;
+                    }
+                    .desc{
+                        font-size: 16px;
+                        line-height: 26px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            >li:nth-child(even){
+                margin-right: 0;
+            }
+            >li:nth-child(1)>dl>dt{
+                background-color: $dev-color-btn;
+                background-position: 0 0;
+            }
+            >li:nth-child(2)>dl>dt{
+                background-color: $dev-color-active;
+                background-position: -126px 0;
+            }
+            >li:nth-child(3)>dl>dt{
+                background-color: #44c1f0;
+                background-position: 0 -126px;
+            }
+            >li:nth-child(4)>dl>dt{
+                background-color: #ff6159;
+                background-position: -126px -126px;
+            }
+        }
+    }
+    
+}
+.home-nav.drop-down .goods .list-group{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.home-nav.drop-down .goods .list-group .list-item .list-cont{
+    border-top: 0;
+    margin-top: 0;
+    box-shadow: none;
+}

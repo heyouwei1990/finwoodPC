@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/company-certification.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+		<div class="accmanage-cont">
+			<div class="container clearfix">
+				<div class="cont-left"></div>
+				<script type="text/javascript">
+					$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+				</script>
+				<div class="cont-right">
+					<!--企业认证-->
+					<div class="company-certification">
+						<h2 class="accmanage-hd">收款账户</h2>
+						<div class="accmanage-userinfo">
+							<ul>
+								<li>
+									<dl>
+										<dt><i>*</i> 开户银行：</dt>
+										<dd>
+											<select class="common-select">
+												<option></option>
+											</select>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><i>*</i> 公司抬头：</dt>
+										<dd>
+											<input type="text" value="" placeholder="" />
+										</dd>
+										<dd class="tip-in">
+											<a href=""></a>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><i>*</i> 对公帐号：</dt>
+										<dd>
+											<input type="text" value="" placeholder="请输入对公银行卡号" />
+											<p class="warn"><i></i>!请输入对公银行卡号</p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt></dt>
+										<dd>
+											<div class="btn-up">
+												<input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
+												<img src="img/accmanage/permission.png"/>
+												<p class="warn"><i></i>你还未上传开户许可证</p>
+											</div>
+											<p class="tip-gray">* 文件大小小于2M</p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><i>*</i> 驳回原因：</dt>
+										<dd>
+											<div class="val-txt">图片模糊</div>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<button class="btn-save" disabled>提交审核</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<script src="js/lib/jquery.ui.widget.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery.iframe-transport.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/jquery.fileupload.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/app/company-certification.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

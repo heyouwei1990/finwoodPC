@@ -1,0 +1,43 @@
+.cart-step {
+        * {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    .container {
+        background-color: #fff;
+        padding: 40px 0 32px 0;
+        ul {
+            display: block;
+            margin: auto;
+            width: 1108px;
+            height: 39px;
+            line-height: 39px;
+            background: url(../../img/cart/sprite.jpg) no-repeat;
+            li {
+                float: left;
+                display: block;
+                width: 369px;
+                height: 39px;
+                text-align: center;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+    }
+    &.step1 {
+        ul {
+            background-position: 0 0;
+        }
+    }
+    &.step2 {
+        ul {
+            background-position: 0 -39px;
+        }
+    }
+    &.step3 {
+        ul {
+            background-position: 0 -78px;
+        }
+    }
+}

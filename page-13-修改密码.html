@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/psw.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header sub"></div>
+		<script type="text/javascript">
+			$('.header.sub').load("头部-子.html");
+		</script>
+		<!--end-->
+		<div class="container">
+			<!--修改密码-->
+			<div class="editpsw-cont">
+				<div class="form">
+					<p class="title">修改密码</p>
+					<ul class="form-group">
+						<li class="form-item">
+							<p class="label"><i>*</i><span>输入旧密码：</span></p>
+							<input class="phone" type="text" placeholder="输入密码">
+							<p class="warn"><i></i>密码不正确！</p>
+						</li>
+						<li class="form-item">
+							<p class="label"><i>*</i><span>设置新密码：</span></p>
+							<input class="phone" type="text" placeholder="输入密码">
+							<p class="warn"><i></i>密码格式错误</p>
+							<p class="tip">8-20个字符，字母数字标<br/>点符号，不允许输入空格</p>
+						</li>
+					</ul>
+					<dl class="psw-tip">
+						<dt class="tip">密码强度：</dt>
+						<dd class="strength">低</dd>
+						<dd class="strength active">中</dd>
+						<dd class="strength">高</dd>
+					</dl>
+					<ul class="form-group">
+						<li class="form-item mb0">
+							<p class="label"><i>*</i><span>确认新密码：</span></p>
+							<input class="phone" type="text" placeholder="输入密码">
+							<p class="warn"><i></i>密码不一致</p>
+						</li>
+					</ul>
+					<a class="btn-submit" href="javascript:void(0);">下一步</a>
+				</div>
+			</div>
+			<!--end-->
+			<!--重置成功-->
+			<div class="editpsw-success hide">
+				<div class="tip">
+					<span>新密码设置成功！</span>
+				</div>
+				<div class="btn-group">
+					<a class="btn-login" href="page-14-登录.html">返回登录</a>
+				</div>
+			</div>
+			<!--end-->
+		</div>
+
+		<!--底部-->
+		<div class="footer sub"></div>
+		<script type="text/javascript">
+			$('.footer.sub').load("底部-子.html");
+		</script>
+		<!--end-->
+	</body>
+
+</html>

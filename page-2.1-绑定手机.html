@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/login-regi.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header sub"></div>
+		<script type="text/javascript">
+			$('.header.sub').load("头部-子.html");
+		</script>
+		<!--end-->
+		
+		<div class="container">
+			<!--注册-->
+			<div class="register-cont">
+				<div class="form">
+					<p class="title">绑定手机号</p>
+					<div class="bind-tab-wrap">
+						<ul class="bind-tab-hd">
+							<li class="on">已注册手机账号</li>
+							<li>未注册手机账号</li>
+						</ul>
+						<ul class="form-group">
+							<li class="form-item err">
+								<p class="label"><i>*</i><span>手机号：</span></p>
+								<input class="phone" type="text" placeholder="输入手机号">
+								<p class="tip">作为登录用户名<br/>请输入你常用手机号</p>
+								<p class="warn"><i></i>手机号不对</p>
+							</li>
+							<li class="form-item pic-verifi">
+								<p class="label"><i>*</i><span>图片验证码：</span></p>
+								<input class="phone" type="text" placeholder="输入验证码">
+								<img class="verifi-img" src="img/register/yzm.jpg" alt="看不清？换一张" title="看不清？换一张" />
+								<p class="warn"><i></i>验证码不对</p>
+							</li>
+							<li class="form-item phone-verifi">
+								<p class="label"><i>*</i><span>短信验证码：</span></p>
+								<input class="phone" type="text" placeholder="输入手机验证码">
+								<a class="verifi-btn" href="javascript:void(0);">获取验证码</a>
+								<p class="warn"><i></i>验证码不对</p>
+							</li>
+							<li class="form-item unreg">
+								<p class="label"><i>*</i><span>设置密码：</span></p>
+								<input class="phone" type="text" placeholder="输入密码">
+								<p class="tip">8-20个字符，字母数字标<br/>点符号，不允许输入空格</p>
+								<p class="warn"><i></i>密码不能为空</p>
+							</li>
+						</ul>
+						<dl class="psw-tip unreg">
+							<dt class="tip">密码强度：</dt>
+							<dd class="strength">低</dd>
+							<dd class="strength active">中</dd>
+							<dd class="strength">高</dd>
+						</dl>
+						<div class="agree-cont unreg">
+							<label><input class="agree-btn" type="checkbox"><i></i>&nbsp;已阅读并接受</label>
+							<a href="page-9-芬木网用户服务协议.html" target="_blank">《<span>芬木网用户服务协议</span>》</a>
+						</div>
+						<button type="button" class="btn-submit" disabled>立即绑定</button>
+					</div>
+				</div>
+				<div class="logined">
+					<p class="title">已有芬木账号？</p>
+					<p class="desc">登录芬木网，即可免费查看或在线购买全<br />国优质的木材资源，也可以免费发布木材<br />求购信息。</p>
+					<a class="btn-login" href="page-14-登录.html">去登陆<i></i></a>
+					<p class="tip">有任何问题请联系客服：021-11111111</p>
+					<div class="ad">
+						<img src="img/login/banner.png"/>
+					</div>
+				</div>
+			</div>
+			<!--end-->
+			<!--注册成功-->
+			<div class="register-success hide">
+				<div class="tip">
+					<span>恭喜您注册成功！</span>
+				</div>
+				<p class="warn">请尽快到账户管理 - 个人信息 / 企业认证完善并提交资质审核</p>
+				<p class="tip-desc">审核通过后才可正常发布求购信息及现货木材交易</p>
+				<div class="btn-group">
+					<a class="btn-auth" href="page-12-个人实名认证.html">个人实名认证</a>
+					<a class="btn-apply" href="page-11-申请企业认证.html">申请企业认证</a>
+					<a class="btn-shop" href="#">去商城&nbsp;&gt;</a>
+				</div>
+			</div>
+			<!--end-->
+		</div>
+		
+		<!--底部-->
+		<div class="footer sub"></div>
+		<script type="text/javascript">
+			$('.footer.sub').load("底部-子.html");
+		</script>
+		<!--end-->
+		<script src="js/app/bind.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

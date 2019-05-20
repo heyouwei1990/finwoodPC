@@ -1,0 +1,241 @@
+.findpsw-cont {
+    margin-top: 24px;
+    padding: 38px 0 48px 0;
+    background-color: #fff;
+    @extend .clearfix;
+    .step-img {
+        display: block;
+        margin: 0 auto 45px auto;
+        width: 960px;
+        height: 55px;
+        background: url(../../img/findpsw/step.png) no-repeat;
+    }
+    &.step1 {
+        .step-img {
+            background-position-y: 0;
+        }
+    }
+    &.step2 {
+        .step-img {
+            background-position-y: -55px;
+        }
+    }
+    &.step3 {
+        .step-img {
+            background-position-y: -110px;
+        }
+        .form {
+            margin-left: 0;
+        }
+    }
+    .form {
+        display: block;
+        margin-left: 277px;
+        &:last-child{
+            margin-left: 0;
+        }
+        .form-group {
+            .form-item {
+                position: relative;
+                margin-bottom: 20px;
+                height: 40px;
+                &:last-child {
+                    margin-bottom: 10px;
+                }
+                .label {
+                    float: left;
+                    display: block;
+                    padding-right: 6px;
+                    width: 160px;
+                    color: #666;
+                    font-size: 14px;
+                    text-align: right;
+                    line-height: 40px;
+                    i {
+                        padding-right: 4px;
+                        color: #e52217;
+                    }
+                }
+                input {
+                    float: left;
+                    display: block;
+                    padding: 6px 10px;
+                    width: 258px;
+                    height: 40px;
+                    font-size: 14px;
+                    color: #666;
+                    line-height: 24px;
+                    border: 1px solid #e2e2e2;
+                    border-radius: $dev-btn-border-radius;
+                }
+                .tip {
+                    float: left;
+                    display: block;
+                    padding: 4px 0 0 10px;
+                    color: #999;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                &.pic-verifi {
+                    input {
+                        width: 192px;
+                        border-right: none;
+                        border-bottom-right-radius: 0;
+                        border-top-right-radius: 0;
+                    }
+                    img {
+                        float: left;
+                        display: block;
+                        width: 66px;
+                        height: 40px;
+                        border: 1px solid #e2e2e2;
+                        border-bottom-right-radius: $dev-btn-border-radius;
+                        border-top-right-radius: $dev-btn-border-radius;
+                        cursor: pointer;
+                    }
+                    .tip {
+                        font-size: 12px;
+                        padding-top: 0;
+                        line-height: 40px;
+                    }
+                }
+                &.phone-verifi {
+                    input {
+                        width: 152px;
+                        border-right: none;
+                        border-bottom-right-radius: 0;
+                        border-top-right-radius: 0;
+                    }
+                    .verifi-btn {
+                        float: left;
+                        display: block;
+                        width: 106px;
+                        height: 40px;
+                        line-height: 38px;
+                        color: $dev-color-active;
+                        font-size: 14px;
+                        text-align: center;
+                        background-color: #f5f5f5;
+                        border: 1px solid #e2e2e2;
+                        border-bottom-right-radius: $dev-btn-border-radius;
+                        border-top-right-radius: $dev-btn-border-radius;
+                        &.dimed {
+                            color: #ccc;
+                            cursor: default;
+                        }
+                    }
+                }
+                .icon-right {
+                    float: left;
+                    display: block;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    width: 20px;
+                    height: 20px;
+                    background: url(../../img/findpsw/gou.png) no-repeat center center;
+                }
+                .warn{
+                    left: 168px;
+                }
+            }
+        }
+        .tip-msg {
+            margin-left: 166px;
+            color: #999;
+            font-size: 12px;
+        }
+        .psw-tip {
+            display: block;
+            margin-bottom: 24px;
+            margin-left: 204px;
+            height: 16px;
+            .tip {
+                float: left;
+                display: block;
+                color: #666;
+                font-size: 16px;
+            }
+            .strength {
+                float: left;
+                margin-top: 2px;
+                margin-right: 5px;
+                padding: 0 12px;
+                color: #E2E2E2;
+                font-size: 12px;
+                line-height: 14px;
+                background-color: #E2E2E2;
+                &.active {
+                    color: #fff;
+                    background-color: #f9aa32;
+                }
+                &.active1 {
+                    color: #fff;
+                    background-color: red;
+                }
+                &.active2 {
+                    color: #fff;
+                    background-color: #f9aa32;
+                }
+                &.active3 {
+                    color: #fff;
+                    background-color: #3bc03b;
+                }
+            }
+        }
+        .btn-submit {
+            display: block;
+            margin-left: 160px;
+            margin-top: 34px;
+            width: 258px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            background-color: $dev-color-active;
+            border-radius: $dev-btn-border-radius;
+        }
+        .findpsw-success {
+            padding: 37px 0 34px 0;
+            background-color: #fff;
+            text-align: center;
+            .tip {
+                display: inline-block;
+                height: 44px;
+                color: $dev-color-btn;
+                font-size: 16px;
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    width: 44px;
+                    height: 44px;
+                    background-image: url(../../img/login/success.png);
+                    background-repeat: no-repeat;
+                    vertical-align: middle;
+                    margin-top: -3px;
+                    margin-right: 10px;
+                }
+            }
+            .btn-group {
+                display: block;
+                margin: 25px auto 0 auto;
+                width: 156px;
+                height: 40px;
+                a {
+                    float: left;
+                    display: block;
+                    font-size: 16px;
+                    color: #fff;
+                    &.btn-login {
+                        width: 156px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        border-radius: $dev-btn-border-radius;
+                        background-color: $dev-color-active;
+                    }
+                }
+            }
+        }
+    }
+}

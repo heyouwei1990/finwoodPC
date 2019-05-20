@@ -1,0 +1,279 @@
+.accmanage-ordermanage {
+    padding: 18px 30px;
+    .order-nav {
+        margin-bottom: 20px;
+        height:48px;
+        border-bottom: 2px solid #eee;
+        ul {
+            float: left;
+            text-align: center;
+            width: 55%;
+            height:48px;
+        }
+        li {
+            float: left;
+            height:48px;
+            font-size: 15px;
+            padding: 8px 20px 10px 20px;
+            cursor: pointer;
+        }
+        .active {
+            border-bottom: 2px solid $dev-color-btn;
+            color: $dev-color-btn;
+        }
+        .searchGroup {
+            position: relative;
+            float: right;   
+            top: 0px;
+            input {
+                width: 280px;
+                height: 36px;
+                font-size: 14px;
+                padding: 5px 10px;
+                border: 1px solid #eee;
+                padding-right: 50px;
+                text-overflow: ellipsis;
+            }
+            span {
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 2;
+                width: 48px;
+                height: 36px;
+                background: $dev-color-active url(../../img/home/sousuo.png) center center no-repeat;
+                background-size: 52.5% 70%;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+                cursor: pointer;
+            }
+        }
+    }
+    .orderList {
+        width: 100%;
+        a{
+            color: $dev-link;
+        }
+        table{
+            border: 1px solid #eee;
+        }
+        thead {
+            background: #eee;
+            th {
+                position: relative;
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+                color: #666;
+                border-right: 1px solid #d2d2d2;
+                text-align: center;
+                &:nth-last-of-type(1) {
+                    border-right-color: #eee;
+                }
+            }
+            select {
+                width: 130px;
+                height: 28px;
+                font-size: 14px;
+                border: none;
+                color: #666;
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                z-index: 2;
+                margin-top: -14px;
+                
+            }
+        }
+        td[colspan="5"] {
+            height: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .orderId {
+            color: #333;
+            font-size: 14px;
+            height: 46px!important;
+            padding: 10px 10px;
+            white-space: nowrap;
+            border-top: 1px solid #eee;
+            border-right: 1px solid #eee;
+            border-left: 1px solid #eee;
+            text-align: left;
+            line-height: 24px;
+            white-space: normal;
+            span {
+                color: #666;
+                margin-right: 13px;
+                display: inline-block;
+            }
+            img {
+                position: relative;
+                top: 3px;
+            }
+        }
+        td {
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            .handleBtn {
+                display: inline-block;
+                cursor: pointer;
+                width: 80px;
+                height: 27px;
+                line-height: 27px;
+                border-radius:3px ;
+                color: #fff;
+                margin-bottom: 12px ;
+            }
+            .orange {
+                color: $dev-color-btn;
+                white-space: nowrap;
+            }
+            .green{
+                color: $dev-color-active;
+                white-space: nowrap;
+            }
+            .red {
+                color: $dev-color-txt;
+                white-space: nowrap;
+            }
+            .gray {
+                color: #666;
+                white-space: nowrap;
+            }
+            .orangeBg{
+                background: $dev-color-btn;
+                border: 1px solid $dev-color-btn;
+            }
+            .greenBg{
+                background: $dev-color-active;
+                border: 1px solid $dev-color-active;
+            }
+            .border_orange {
+                border: 1px solid $dev-color-btn;
+                &:hover {
+                    background: $dev-color-btn;
+                    color: #fff;
+                }
+            }
+            .border_green {
+                border: 1px solid $dev-color-active;
+                &:hover {
+                    background: $dev-color-active;
+                    color: #fff;
+                }
+            }
+        }
+        tbody>tr:nth-of-type(3n+2) {
+            border: 1px solid #eee;
+            td {
+                border-left: 1px solid #eee;
+                line-height: 2;
+            }
+        }
+        .details {
+            text-align: left;
+            border: none;
+            width: 460px;
+            img {
+                width: 86px;
+                height: 86px;
+                margin-right:10px;
+            }
+            .sku {
+                padding:20px;
+                border-bottom: 1px solid #eee;
+                font-size: 14px;
+                overflow: hidden;
+                white-space: nowrap;
+                .sku-dt{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .sku-dd{
+                    display: inline-block;
+                    vertical-align: middle;
+                    white-space: normal;
+                    max-width: 322px;
+                    span {
+                        color: $dev-color-txt;
+                    }
+                }
+                
+                &:nth-last-child(1) {
+                    border-bottom: none;
+                }
+                p {
+                    line-height: 24px;
+                    position: relative;
+                    color: #333;
+                }
+                .edit-btns{
+                    margin-top: 6px;
+                    text-align: center;
+                    padding-right: 60px;
+                }
+                .edit-btns a {
+                    display: inline-block;
+                    margin-right: 10px;
+                    color: $dev-link;
+                    border: 1px solid $dev-link;
+                    font-size: 14px;
+                    line-height: 24px;
+                    padding: 0 8px;
+                    min-width: 74px;
+                    border-radius:3px; 
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &:hover {
+                        background: $dev-link;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.confirm-txt{
+    dl{
+        @extend .clearfix;
+        display: inline-block;
+        dt{
+            float: left;
+            font-size: 14px;
+            color: #333;
+            line-height: 40px; 
+        }
+        dd{
+            position: relative;
+            float: left;
+        }
+        dd>input{
+            width: 120px;
+            height: 40px;
+            padding: 7px 10px;
+            line-height: 24px;
+            border: 1px solid #eee;
+        }
+    }
+}
+.dialog-setaddr{
+    .dialog-cont{
+        padding-top: 80px !important;
+    }
+    .check-info{
+        padding-left: 102px;
+        line-height: 24px;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+    .check-info>label>i{
+        margin-right: 3px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/accmanage-recharge.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+		<div class="accmanage-cont">
+			<div class="container clearfix">
+				<div class="cont-left"></div>
+				<script type="text/javascript">
+					$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+				</script>
+				<div class="cont-right">
+					<div class="accmanage-recharge accmanage-account">
+						<h2 class="accmanage-hd">资金账户</h2>
+						<div class="pay-tab">
+							<div class="pay-tab-hd clearfix">
+								<span class="on">个人银行</span>
+								<span>企业网银</span>
+							</div>
+							<div class="pay-tab-bd on">
+								<div class="bank-list">
+									<span class="gongshang on"></span>
+									<span class="nongye"></span>
+									<span class="zhongguo"></span>
+									<span class="jianshe"></span>
+									<span class="jiaotong"></span>
+									<span class="zhongxin"></span>
+									<span class="guangda"></span>
+									<span class="guangfa"></span>
+									<span class="shenzhenfazhan"></span>
+									<span class="zhaoshang"></span>
+									<span class="xingye"></span>
+									<span class="pufa"></span>
+									<span class="beijing"></span>
+									<span class="shanghainongshang"></span>
+									<span class="youchu"></span>
+								</div>
+							</div>
+							<div class="pay-tab-bd">
+								<div class="bank-list">
+									<span class="gongshang"></span>
+									<span class="nongye"></span>
+									<span class="zhongguo"></span>
+									<span class="jianshe"></span>
+									<span class="jiaotong"></span>
+									<span class="zhongxin"></span>
+									<span class="guangda"></span>
+									<span class="minsheng"></span>
+									<span class="guangfa"></span>
+									<span class="zhaoshang"></span>
+									<span class="xingye"></span>
+									<span class="pufa"></span>
+									<span class="beijing"></span>
+									<span class="shanghai"></span>
+									<span class="pingan"></span>
+									<span class="youchu"></span>
+								</div>
+							</div>
+						</div>
+						<div class="recharge-hd">充值金额</div>
+						<div class="recharge-input">
+							<input type="text" placeholder="请输入充值金额" />
+							<div class="tip-gray">充值金额不得少于100元</div>
+							<!--<div class="warn"><i></i></div>-->
+						</div>
+						<button class="btn-orange btn-recharge">立即充值</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		<!--充值弹框-->
+		<div class="dialog dialog-recharge">
+			<div class="maskbg"></div>
+			<div class="dialog-cont">
+				<a class="close" href="javascript:void(0)"></a>
+				<h3 class="dialog-hd">账户充值确定</h3>
+				<div class="inner">
+					<div class="cell">
+						<p>请在新打开的页面完成支付，充值完成后再关闭此窗口</p>
+						<p class="tip-important">温馨提示：充值实际到账时间以汇付为准</p>
+					</div>
+				</div>
+				<div class="btn-group">
+					<a class="btn-green" href="#">充值成功</a>
+					<!--<a class="btn-right" href="#">充值遇到问题</a>-->
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('.btn-recharge').click(function(){
+				$('.dialog-recharge').show();
+			})
+			$('.dialog-recharge .close').click(function(){
+				$(this).parents('.dialog-recharge').hide();
+			})
+		</script>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+	</body>
+</html>

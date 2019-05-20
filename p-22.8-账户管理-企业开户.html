@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/accmanage-open-accout.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+			<div class="accmanage-cont">
+				<div class="container clearfix">
+					<div class="cont-left"></div>
+					<script type="text/javascript">
+						$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+					</script>
+					<div class="cont-right">
+						<div class="accmanage-open-account">
+							<h2 class="accmanage-hd">申请开户</h2>
+							<h3 class="open-hd">企业开户</h3>
+							<!--个人信息-->
+							<div class="left-switch">
+								切换 <a class="btn-switch" href="p-22.8-账户管理-个人开户.html">个人开户</a>
+							</div>
+							<div class="open-steps step0"></div>
+							
+							<div class="step-bd0">
+								<div class="fill-form">
+									<ul class="input-row-list">
+										<li>
+											<dl>
+												<dt><i>*</i>企业名称：</dt>
+												<dd>
+													<span class="val-txt">企业名称</span>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>企业类型：</dt>
+												<dd>
+													<select class="common-select">
+														<option>请选择企业类型</option>
+														<option>普通企业</option>
+														<option>个体户</option>
+													</select>
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>企业证照类型：</dt>
+												<dd>
+													<select class="common-select">
+														<option>请选择企业证照类型</option>
+														<option>普通营业执照企业</option>
+														<option>三证合一企业</option>
+													</select>
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>证照起始日期：</dt>
+												<dd>
+													<input id="startTime" type="text" placeholder="请输入证件起始日期" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>证照结束日期：</dt>
+												<dd>
+													<input id="endTime" type="text" placeholder="请输入证件截止日期" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>企业经营地址：</dt>
+												<dd>
+													<input type="text" placeholder="请输入企业经营地址" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>企业注册地址：</dt>
+												<dd>
+													<input type="text" placeholder="请输入企业注册地址" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>企业固定电话：</dt>
+												<dd>
+													<input type="text" placeholder="请输入企业固定电话" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>经营范围：</dt>
+												<dd>
+													<input type="text" placeholder="请输入经营范围" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+								<div class="btn-group">
+									<button class="btn-orange">上一步</button>
+									<button class="btn-green">下一步</button>
+								</div>
+							</div>
+							<div class="step-bd1 hide">
+								<div class="fill-form">
+									<ul class="input-row-list">
+										<li>
+											<dl>
+												<dt><i>*</i>企业固定电话：</dt>
+												<dd>
+													<input type="text" placeholder="格式021-12345678" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>企业经营地址：</dt>
+												<dd>
+													<input type="text" placeholder="请输入企业经营地址" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>法人姓名：</dt>
+												<dd>
+													<input type="text" placeholder="格式021-12345678" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>证件类型：</dt>
+												<dd>
+													<select class="common-select">
+														<option>请选择证件类型</option>
+														<option>身份证</option>
+													</select>
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>法人身份证号：</dt>
+												<dd>
+													<input type="text" placeholder="请输入法人身份证号" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>法人手机：</dt>
+												<dd>
+													<input type="text" placeholder="请输入法人手机" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>法人邮箱：</dt>
+												<dd>
+													<input type="text" placeholder="请输入法人邮箱" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>联系人手机：</dt>
+												<dd>
+													<input type="text" placeholder="请输入联系人手机" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>联系人邮箱：</dt>
+												<dd>
+													<input type="text" placeholder="请输入联系人邮箱" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>企业联系人姓名：</dt>
+												<dd>
+													<input type="text" placeholder="请输入企业联系人姓名" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>证件起始日期：</dt>
+												<dd>
+													<input id="startTime0" type="text" placeholder="请输入证件起始日期" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>证件结束日期：</dt>
+												<dd>
+													<input id="endTime0" type="text" placeholder="请输入证件截止日期" />
+													<p class="warn"><i></i>必填项</p>
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+								<div class="btn-group">
+									<button class="btn-orange">上一步</button>
+									<button class="btn-green">下一步</button>
+								</div>
+							</div>
+							<div class="step-bd2 hide">
+								<div class="fill-form">
+									<ul class="input-row-list">
+										<li>
+											<dl>
+												<dt><i>*</i>银行名称：</dt>
+												<dd>
+													<select class="common-select">
+														<option>请选择开户银行</option>
+													</select>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>银行账户名：</dt>
+												<dd>
+													<input type="text" placeholder="请输入银行账户名" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>银行账号：</dt>
+												<dd>
+													<input type="text" placeholder="请输入银行账号" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>支行名称：</dt>
+												<dd>
+													<input type="text" placeholder="请输入支行名称" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>开户省份：</dt>
+												<dd>
+													<select class="common-select">
+														<option>请选择开户省份</option>
+													</select>
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i> 开户地区：</dt>
+												<dd>
+													<select class="common-select">
+														<option>请选择开户地区</option>
+													</select>
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+								<div class="btn-group">
+									<button class="btn-orange">上一步</button>
+									<button class="btn-green">下一步</button>
+								</div>
+							</div>
+							<div class="step-bd3 hide">
+								<div class="fill-form">
+									<div class="icon-delete">×</div>
+									<ul class="input-row-list">
+										<li>
+											<dl>
+												<dt><i>*</i>股东姓名：</dt>
+												<dd>
+													<input type="text" placeholder="请输入个人股东姓名或机构名称" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>股东证件号：</dt>
+												<dd>
+													<input type="text" placeholder="三证统一社会信用码，非三证营业执照号" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>股东类型：</dt>
+												<dd>
+													<select class="common-select">
+														<option>个人股东</option>
+														<option>机构股东</option>
+													</select>
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+								<div class="fill-form">
+									<div class="icon-delete">×</div>
+									<ul class="input-row-list">
+										<li>
+											<dl>
+												<dt><i>*</i>股东姓名：</dt>
+												<dd>
+													<input type="text" placeholder="请输入个人股东姓名或机构名称" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>股东证件号：</dt>
+												<dd>
+													<input type="text" placeholder="三证统一社会信用码，非三证营业执照号" />
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt><i>*</i>股东类型：</dt>
+												<dd>
+													<select class="common-select">
+														<option>个人股东</option>
+														<option>机构股东</option>
+													</select>
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+								<div class="btn-add-shareholder">点击添加股东</div>
+								<div class="btn-group">
+									<button class="btn-orange">上一步</button>
+									<button class="btn-green">下一步</button>
+								</div>
+							</div>
+							<div class="step-bd4 hide">
+								<div class="fill-form">
+									<ul class="file-img-list">
+										<li>
+											<i class="required">*</i>
+											<div class="file-img">
+												<input type="file"  />
+												<img src="img/accmanage/file1.png"/>
+												<div class="ie9-filter"></div>
+											</div>
+											<div class="warn"><i></i>上传图片</div>
+											<a class="btn-look-templet" href="javascript:void(0)">查看模板</a>
+										</li>
+										<li>
+											<i class="required">*</i>
+											<div class="file-img">
+												<input type="file"  />
+												<img src="img/accmanage/file2.png"/>
+												<div class="ie9-filter"></div>
+											</div>
+											<div class="warn"><i></i>上传图片</div>
+										</li>
+										<li>
+											<i class="required">*</i>
+											<div class="file-img">
+												<input type="file"  />
+												<img src="img/accmanage/file3.png"/>
+												<div class="ie9-filter"></div>
+											</div>
+										</li>
+										<li>
+											<i class="required">*</i>
+											<div class="file-img">
+												<input type="file"  />
+												<img src="img/accmanage/file4.png"/>
+												<div class="ie9-filter"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="file-tip">说明：复印件需加盖公司红章，文件支持1MB以内jpg、bmp、png</div>
+								<div class="btn-group">
+									<button class="btn-orange">上一步</button>
+									<button class="btn-green">提交审核</button>
+								</div>
+							</div>
+							<!--end-->
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--end-->
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<!--企业授权书模板-->
+		<div class="dialog dialog-templet">
+			<div class="maskbg"></div>
+			<div class="dialog-cont">
+				<a href="javascript:void(0)" class="close"></a>
+				<div class="inner">
+					<img src="img/accmanage/bg.png"/>
+				</div>
+				<div class="btn-download">下载模板</div>
+			</div>
+		</div>
+		<!--end-->
+		<script src="js/lib/laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/accmanage-open-account.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

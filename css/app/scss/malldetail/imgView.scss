@@ -1,0 +1,108 @@
+#show-container{
+    position: relative;
+    width: 438px;
+    box-sizing: border-box;
+    *{
+        box-sizing: border-box;
+    }
+    .show-area{
+        position: relative;
+        z-index: 1;
+        width: 438px;
+        height: 412px;
+        border: 1px solid #eee;
+        box-sizing: content-box;
+    }
+    .show-area>a{
+        display:inline-block;
+        text-align: center;
+        vertical-align: middle;
+        width: 438px;
+        height: 412px;
+    }
+    .show-area>a>img{
+        vertical-align: middle;
+        cursor: crosshair;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        max-width: 438px;
+        max-height: 412px;
+    }
+    .pic-nav-container{
+        height: 64px;
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+    }
+    .pic-nav-container>[class^="btn-"]{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 15px;
+        background-color: #aff;
+        cursor: pointer;
+        display: none;
+    }
+    .pic-nav-container>.btn-prev{
+        left: -20px;
+    }
+    .pic-nav-container>.btn-next{
+        right: -20px;
+    }
+    .MagicZoomBigImageCont {
+        border: none;
+    }
+    .pic-nav-wrapper{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 438px;
+        height: 64px;
+        overflow: hidden;
+        >ul{
+            width: 9999px;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        li{
+            float: left;
+            width: 74px;
+            height: 64px;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+        li.active{
+            img{
+                border: 2px solid $dev-color-active;
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+.zoomDiv{
+    z-index:999;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:438px;
+    height:412px;
+    background:#ffffff;
+    display:none;
+    text-align:center;
+    overflow:hidden;
+}
+.zoomMask{
+    position:absolute;
+    //background:url("../../img/malldetail/mask.png") repeat scroll 0 0 transparent;
+    background-color: rgba(100,255,100,.2);
+    cursor:move;
+    z-index:1;
+}

@@ -1,0 +1,57 @@
+.home-hzhb{
+    margin-top: 18px;
+    padding-bottom: 40px;
+    .container {
+        background-color: #fff;
+        min-height: 380px;
+        @extend .clearfix;
+    }
+    .cont-left {
+        width: 274px;
+        padding-bottom: 20px;
+        .title {
+            display: block;
+            width: 100%;
+            height: 88px;
+            line-height: 88px;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+            background-color: $dev-color-active;
+        }
+    }
+    .cont-right {
+        padding: 0 40px 40px;
+        .partner-list-wrap{
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-wrapper{
+            overflow: hidden;
+            width: 9999px;
+        }
+        .swiper-slide{
+            float: left;
+            width: 265px;
+            height: 232px;
+            .partner:first-child{
+                margin-bottom: 20px;
+            }
+        }
+        .partner{
+            display: block;
+            width: 265px;
+            height: 106px;
+            line-height: 106px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .partner>img{
+            display: inline-block;
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+        }
+    }
+}

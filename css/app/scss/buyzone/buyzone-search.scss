@@ -1,0 +1,58 @@
+.buyzone-search {
+        * {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    margin-top: 20px;
+    .container {
+        height: 75px;
+        background-color: #fff;
+    }
+    .btn-pubbuy {
+        float: left;
+        display: block;
+        margin-top: 14px;
+        margin-left: 46px;
+        width: 122px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        background-color: $dev-color-btn;
+        border-radius: $dev-btn-border-radius;
+    }
+    .input-group {
+        position: relative;
+        float: right;
+        margin-top: 14px;
+        margin-right: 74px;
+        input {
+            display: block;
+            padding: 10px 85px 10px 14px;
+            width: 296px;
+            height: 40px;
+            font-size: 14px;
+            color: #666;
+            border: 1px solid $dev-color-active;
+            border-radius: $dev-btn-border-radius;
+            box-sizing: border-box;
+        }
+        a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            background-color: $dev-color-active;
+            border-bottom-right-radius: $dev-btn-border-radius;
+            border-top-right-radius: $dev-btn-border-radius;
+        }
+    }
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/order.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--步骤-->
+		<div class="cart-step step2"></div>
+		<script type="text/javascript">
+			$('.cart-step').load("template/cart-step.html");
+		</script>
+		<!--end-->
+		<!--订单信息-->
+		<div class="order-info">
+			<div class="container">
+				<p class="title">订单信息</p>
+				<ul>
+					<li>卖 方：<span>瀚达木业有限公司</span></li>
+					<li>买 方：<span>纬谛科技有限公司</span></li>
+					<li>联系人：<span>张三</span></li>
+					<li>联系人：<span>张三</span></li>
+					<li>联系电话：<span>13611111111</span></li>
+					<li>联系电话：<span>13811111111</span></li>
+				</ul>
+			</div>
+		</div>
+		<!--end-->
+		<!--商品清单-->
+		<div class="order-list">
+			<div class="container">
+				<p class="title">商品清单</p>
+				<ul class="table-ul">
+					<li class="th-wrap">
+						<div class="m1">基本信息</div>
+						<div class="m2">规格</div>
+						<div class="m3">单价/立方米</div>
+						<div class="m4">提货仓库</div>
+						<div class="m5">采购数</div>
+						<div class="m6">金额小计</div>
+					</li>
+					<li class="td-wrap">
+						<div class="m1">
+							<a href="#">
+								<img src="img/mall/pic.jpg" />
+								<div class="cont">
+									<p class="ellipsis">品名：<span>小斑马</span></p>
+									<p class="ellipsis">等级：<span>A级</span></p>
+									<p class="ellipsis">产地：<span>加蓬</span></p>
+								</div>
+							</a>
+						</div>
+						<div class="ellipsis m2">44*145*1-1.5M</div>
+						<div class="ellipsis m3 price">¥3600</div>
+						<div class="ellipsis m4">张家港</div>
+						<div class="ellipsis m5">2立方米</div>
+						<div class="ellipsis m6 price">¥7200</div>
+					</li>
+					<li class="td-wrap">
+						<div class="m1">
+							<a href="#">
+								<img src="img/mall/pic.jpg" />
+								<div class="cont">
+									<p class="ellipsis">品名：<span>小斑马</span></p>
+									<p class="ellipsis">等级：<span>A级</span></p>
+									<p class="ellipsis">产地：<span>加蓬</span></p>
+								</div>
+							</a>
+						</div>
+						<div class="ellipsis m2">44*145*1-1.5M</div>
+						<div class="ellipsis m3 price">¥3600</div>
+						<div class="ellipsis m4">张家港</div>
+						<div class="ellipsis m5">3立方米</div>
+						<div class="ellipsis m6 price">¥10800</div>
+					</li>
+				</ul>
+				<div class="result">
+					共计：<span>20.720</span>立方米 <span>¥89760</span>元，预付金额：<span>¥6800</span>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		<!--配送方式-->
+		<div class="order-express">
+			<div class="container">
+				<p class="title">配送方式</p>
+				<ul>
+					<li>
+						<label class="radio"><input name="bank" type="radio" checked="checked" /><i></i><p>上门自提<span>(由买家安排物流公司上门提货并承担物流费用）</span></p></label>
+						<p class="desc">提货仓库：张家港中联木业城</p>
+						<p class="desc m-td">地址：张家港市金港镇XXXX路XXX号</p>
+					</li>
+					<li class="m-r20">
+						<label class="radio"><input name="bank" type="radio" checked="checked" /><i></i><p>送货上门<span>(由卖家安排物流配送，物流相关费用由买方承担）</span></p></label>
+					</li>
+					<li class="receive-li">
+						<label>收货人</label>
+						<select class="receive-place" name="">
+							<option value="">张三 &nbsp;&nbsp; 18255667788 &nbsp;&nbsp;上海市闵行区莲花路3699号莲花国际广场2栋1501</option>
+						</select>
+						<button class="btn-green btn-addmyaddr">添加地址</button>
+					</li>
+					<!--<li class="clearfix">
+						<div class="cont-group">
+							<label>收货人</label>
+							<input type="text" value="" />
+							<p class="warn"><i></i>请输入收货人姓名</p>
+						</div>
+						<div class="cont-group">
+							<label>联系电话</label>
+							<input type="text" value="" />
+							<p class="warn"><i></i>请输入联系电话</p>
+						</div>
+					</li>
+					<li class="info">
+						<label class="dz">收货地址</label>
+						<select class="province">
+							<option value="">请选择省份</option>
+							<option value="410881">北京</option>
+							<option value="610100">上海</option>
+							<option value="331000">深圳</option>
+						</select>
+						<select class="city">
+							<option value="">请选择市</option>
+							<option value="410881">北京</option>
+							<option value="610100">上海</option>
+							<option value="331000">深圳</option>
+						</select>
+						<select class="area">
+							<option value="">请选择县区</option>
+							<option value="410881">北京</option>
+							<option value="610100">上海</option>
+							<option value="331000">深圳</option>
+						</select>
+						<label class="dz">详细地址</label>
+						<input type="text" value="" />
+						<p class="warn"><i></i>请输入详细地址</p>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+		<!--end-->
+		<!--end-->
+		<!--卖家留言-->
+		<div class="order-msg">
+			<div class="container">
+				<p class="title">卖家留言</p>
+				<textarea name="" rows="5"></textarea>
+				<div class="desc">
+					<p class="tip">温馨提示</p>
+					<p>一、 在芬木商城采购交易中，可随时与我们的在线客服联系或致电：96238，我们提供一对一采购服务。</p>
+					<p>二、 交货方式：1）上门自提 2）送货上门 两种方式运费均由由买方承担。</p>
+					<p>三、 付款方式及时间：款到发货。</p>
+					<p>四、 请订单提交后2小时内付款，否则平台将关闭订单。</p>
+					<a class="btn-submit" href="page-19-提交订单成功.html">确认下单</a>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<!--弹框--添加和编辑我的收货地址-->
+		<div class="dialog dialog-addmyaddr">
+			<div class="maskbg"></div>
+			<div class="dialog-cont">
+				<a class="close" href="javascript:void(0)"></a>
+				<dl>
+					<dt><i>*</i>收货人姓名</dt>
+					<dd>
+						<input class="common-input" type="text" value="" />
+						<p class="warn"><i></i>收货人姓名为必填项</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>联系电话</dt>
+					<dd>
+						<input class="common-input" type="text" value="" />
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>收货地址</dt>
+					<dd>
+						<select class="common-select">
+							<option>请选择省份</option>
+						</select>
+					</dd>
+					<dd>
+						<select class="common-select">
+							<option>请选择市</option>
+						</select>
+					</dd>
+					<dd>
+						<select class="common-select">
+							<option>请选择县区</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt><i>*</i>详细地址</dt>
+					<dd>
+						<input class="input-addr" type="text" maxlength="100" />
+						<p class="warn"><i></i>限100字</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<button class="btn-orange">保存</button>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!--end-->
+		<script src="js/app/myaddr.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

@@ -1,0 +1,201 @@
+.order-succ {
+    * {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    .container {
+        text-align: center;
+        font-size: 14px;
+        color: #999;
+        background-color: #fff;
+        margin-bottom: 64px;
+        @extend .clearfix;
+    }
+    .step-group {
+        display: inline-block;
+        margin: 44px 0 34px 0;
+        li {
+            float: left;
+            width: 95px;
+            i {
+                display: inline-block;
+                width: 55px;
+                height: 55px;
+                background: url(../../img/order/sprite-order.png) no-repeat;
+            }
+            h6 {
+                margin-top: 15px;
+                font-weight: normal;
+            }
+            &.m0 {
+                width: 40px;
+                i {
+                    background-position: 0 -550px;
+                }
+            }
+            &.m1 {
+                i {
+                    background-position: 0 0;
+                }
+            }
+            &.m2 {
+                i {
+                    background-position: 0 -110px;
+                }
+            }
+            &.m3 {
+                i {
+                    background-position: 0 -220px;
+                }
+            }
+            &.m4 {
+                i {
+                    background-position: 0 -330px;
+                }
+            }
+            &.m5 {
+                i {
+                    background-position: 0 -440px;
+                }
+            }
+        }
+        &.step1,
+        &.step2,
+        &.step3,
+        &.step4,
+        &.step5 {
+            .m1 {
+                color: #333;
+                &+li.m0 {
+                    i {
+                        background-position: 0 -495px;
+                    }
+                }
+            }
+        }
+        &.step2,
+        &.step3,
+        &.step4,
+        &.step5 {
+            .m2 {
+                color: #333;
+                i {
+                    background-position: 0 -55px;
+                }
+                &+li.m0 {
+                    i {
+                        background-position: 0 -495px;
+                    }
+                }
+            }
+        }
+        &.step3,
+        &.step4,
+        &.step5 {
+            .m3 {
+                color: #333;
+                i {
+                    background-position: 0 -165px;
+                }
+                &+li.m0 {
+                    i {
+                        background-position: 0 -495px;
+                    }
+                }
+            }
+        }
+        &.step4,
+        &.step5 {
+            .m4 {
+                color: #333;
+                i {
+                    background-position: 0 -275px;
+                }
+                &+li.m0 {
+                    i {
+                        background-position: 0 -495px;
+                    }
+                }
+            }
+        }
+        &.step5 {
+            .m5 {
+                color: #333;
+                i {
+                    background-position: 0 -385px;
+                }
+                &+li.m0 {
+                    i {
+                        background-position: 0 -495px;
+                    }
+                }
+            }
+        }
+    }
+    .tip {
+        font-size: 18px;
+        line-height: 44px;
+        i {
+            display: inline-block;
+            margin-right: 15px;
+            vertical-align: middle;
+            width: 44px;
+            height: 44px;
+            background: url(../../img/order/sprite-order.png) no-repeat 0 -605px;
+            -ms-transform: scale(0.8);
+            -moz-transform: scale(0.8);
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+        }
+        span {
+            color: #333;
+            vertical-align: middle;
+        }
+    }
+    .time {
+        margin-top: 12px;
+        color: #333;
+        font-size: 14px;
+        i {
+            display: inline-block;
+            margin-left: 4px;
+            margin-right: 4px;
+            vertical-align: -4px;
+            width: 27px;
+            height: 27px;
+            background: url(../../img/order/sprite-order.png) no-repeat 0 -649px;
+            -ms-transform: scale(0.8);
+            -moz-transform: scale(0.8);
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+        }
+        span {
+            color: #e52217;
+            font-size: 16px;
+        }
+    }
+    .desc {
+        margin-top: 20px;
+        color: #999;
+        font-size: 14px;
+        .orderid {
+            color: #666;
+        }
+        .price {
+            color: #e52217;
+            font-size: 16px;
+        }
+    }
+    .btn-go-pay {
+        display: block;
+        margin: 34px auto 60px;
+        width: 128px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 16px;
+        background-color: #f9aa32;
+        border-radius: $dev-btn-border-radius;
+    }
+}

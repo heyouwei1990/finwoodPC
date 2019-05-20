@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>芬木网站</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<link rel="SHORTCUT ICON" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app/accmanage-orderdetail.css" />
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header main"></div>
+		<script type="text/javascript">
+			$('.header.main').load("头部-主.html");
+		</script>
+		<!--end-->
+		<!--内容-->
+		<div class="accmanage-cont">
+			<div class="container clearfix">
+				<div class="cont-left"></div>
+				<script type="text/javascript">
+					$('.accmanage-cont .cont-left').load("template/账号管理-左边栏.html");
+				</script>
+				<div class="cont-right">
+					<div class="accmanage-orderdetail">
+						<h2 class="accmanage-hd">订单详情</h2>
+						<ul class="tab-hd">
+							<li class="on"><span>订单详情</span></li>
+							<li><span>合同</span></li>
+							<li><span>支付</span></li>
+							<li><span>物流</span></li>
+							<li><span>日志</span></li>
+						</ul>
+						<!--订单详情-->
+						<div class="tab-bd">
+							<div class="order-module progress-wrap">
+								<ul class="step-group step1">
+									<li class="m1">
+										<i></i>
+										<h6>提交订单</h6>
+									</li>
+									<li class="m0">
+										<i></i>
+									</li>
+									<li class="m2">
+										<i></i>
+										<h6>付款</h6>
+									</li>
+									<li class="m0">
+										<i></i>
+									</li>
+									<li class="m3">
+										<i></i>
+										<h6>发货</h6>
+									</li>
+									<li class="m0">
+										<i></i>
+									</li>
+									<li class="m4">
+										<i></i>
+										<h6>交易完成</h6>
+									</li>
+								</ul>
+							</div>
+							<div class="order-module">
+								<h3 class="order-module-hd">订单信息</h3>
+								<ul class="info-gird">
+									<li>
+										<div class="gird-line">
+											<span class="info-title">订单编号：</span>
+											<span class="info-desc">FM201710048901 </span>
+										</div>
+										<div class="gird-line">
+											<span class="info-title">卖    方：</span>
+											<span class="info-desc">瀚达木业有限公司</span>
+										</div>
+										<div class="gird-line">
+											<span class="info-title">联系人：</span>
+											<span class="info-desc">张三</span>
+										</div>
+										<div class="gird-line">
+											<span class="info-title">联系电话：</span>
+											<span class="info-desc">13611111111</span>
+										</div>
+									</li>
+									<li>
+										<div class="gird-line">
+											<span class="info-title">下单时间：</span>
+											<span class="info-desc">2017-8-15 12:25</span>
+										</div>
+										<div class="gird-line">
+											<span class="info-title">买   方：</span>
+											<span class="info-desc">纬谛科技有限公司</span>
+										</div>
+										<div class="gird-line">
+											<span class="info-title">联系人：</span>
+											<span class="info-desc">李四</span>
+										</div>
+										<div class="gird-line">
+											<span class="info-title">联系电话：</span>
+											<span class="info-desc">13811111111</span>
+										</div>
+									</li>
+									<li>
+										<div class="gird-line">
+											<span class="info-title">订单状态：</span>
+											<span class="info-desc">待付款</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="order-module">
+								<h3 class="order-module-hd">
+									商品清单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="shopBtn" id="addShopBtn">添加商品</span>
+								</h3>
+								<table class="order-table" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<th>基本信息</th>
+										<th>规格</th>
+										<th>单价/立方米</th>
+										<th>提货仓库</th>
+										<th>采购数</th>
+										<th>操作</th>
+									</tr>
+									<tr>
+										<td>
+											<dl class="goods">
+												<dt><img src="img/mall/pic.jpg"/></dt>
+												<dd>
+													<span>品名：小斑马</span>
+													<span>等级：A级</span>
+													<span>产地：加蓬</span>
+												</dd>
+											</dl>
+										</td>
+										<td>44*145*1-1.5M</td>
+										<td>
+											<p class="price">￥3600</p>
+											<button class="btn-revise editPri">修改价格</button>
+										</td>
+										<td>张家港</td>
+										<td>
+											<p class="vol">2立方米</p>
+											<button class="btn-revise editNum">修改数量</button>
+										</td>
+										<td><span class="shopBtn">删除商品</span></td>
+									</tr>
+									<tr>
+										<td>
+											<dl class="goods ">
+												<dt><img src="img/mall/pic.jpg"/></dt>
+												<dd>
+													<span>品名：小斑马</span>
+													<span>等级：A级</span>
+													<span>产地：加蓬</span>
+												</dd>
+											</dl>
+										</td>
+										<td>44*145*1-1.5M</td>
+										<td>
+											<p class="price">￥3600</p>
+											<button class="btn-revise editPri">修改价格</button>
+										</td>
+										<td>张家港</td>
+										<td>
+											<p class="vol">2立方米</p>
+											<button class="btn-revise editNum">修改数量</button>
+										</td>
+										<td><span class="shopBtn">删除商品</span></td>
+									</tr>
+								</table>
+								<div class="order-total">
+									共计：<span class="red">20.720</span>立方米 <span class="red"> ¥89760</span>元
+								</div>
+							</div>
+							<div class="order-module">
+								<div class="nowrap">
+									<h3 class="order-module-hd">订单信息</h3>
+									<span class="info-desc">付定金</span>
+									<span class="info-desc red">订单全款金额30% </span>
+									<span class="info-desc red">¥XXXX元</span>
+								</div>
+								<div class="nowrap">
+									<h3 class="order-module-hd">付款方式</h3>
+									<span class="info-desc">易宝支付</span>
+								</div>
+								<div class="nowrap">
+									<h3 class="order-module-hd">配送方式</h3>
+									<span class="info-desc">上门自提</span>
+									<span class="info-title">提货仓库：</span>
+									<span class="info-desc">张家港中联木业城</span>
+									<span class="info-title">地址：</span>
+									<span class="info-desc">张家港市金港镇XXXX路XXX号</span>
+								</div>
+								<div class="nowrap">
+									<h3 class="order-module-hd">买家留言</h3>
+									<span class="info-desc">XXXXX</span>
+								</div>
+							</div>
+							<div class="btn-box">
+								<button class="btn-green">取消订单</button>
+								<!--<button class="btn-orange">同意退款</button>-->
+								<button class="btn-orange">发货</button>
+							</div>
+						</div>
+						<!--订单详情 #-->
+						<!--合同-->
+						<div class="tab-bd hide">合同</div>
+						<!--合同 #-->
+						<!--支付-->
+						<div class="tab-bd accmanage-orderdetail-pay hide">
+							<h3 class="order-module-hd">支付记录</h3>
+							<div class="wrapper">
+								<p>
+									<span>支付时间：<small>2017-10-12 12:21</small></span>
+									<span>支付方式：<small>易宝支付</small></span>
+									<span>支付交易号：<small>1299999912</small></span>
+									<span>支付金额：<strong>48000</strong></span>
+									<span>白条支付金额：<strong>48000</strong></span>
+								</p>
+								<p>
+									<span>支付时间：<small>2017-10-12 12:21</small></span>
+									<span>支付方式：<small>易宝支付</small></span>
+									<span>支付交易号：<small>1299999912</small></span>
+									<span>支付金额：<strong>48000</strong></span>
+									<span>白条支付金额：<strong>48000</strong></span>
+								</p>
+								<p>
+									<span>支付时间：<small>2017-10-12 12:21</small></span>
+									<span>支付方式：<small>易宝支付</small></span>
+									<span>支付交易号：<small>1299999912</small></span>
+									<span>支付金额：<strong>48000</strong></span>
+									<span>白条支付金额：<strong>48000</strong></span>
+								</p>
+							</div>
+						</div>
+						<!--支付 #-->
+						<!--物流-->
+						<div class="tab-bd accmanage-orderdetail-logistics hide">
+							<div class="logisticsDetails">
+								<span>物流平台：<small>罗技物流</small></span>
+								<span>物流单号：<small>1299999912</small></span>
+								<span>物流费：<small>48000</small></span>
+								<span>保单号：<small>2342342424234</small></span>
+								<span>车牌号：<small>车牌号</small></span>
+								<span>司机姓名：<small>张小明</small></span>
+								<span>手机：<small>13677778888</small></span>
+							</div>
+							<h3>物流跟踪</h3>
+							<p>2017-10-12 12:21<small>张家港中联木业城</small></p>
+							<p>2017-10-13 12:21<small>太仓 xxx</small></p>
+						</div>
+						<!--物流 #-->
+						<!--日志-->
+						<div class="tab-bd accmanage-orderdetail-log hide">
+							<h2>订单日志</h2>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<th>业务类型</th>
+									<th>业务内容</th>
+									<th>操作人</th>
+									<th>操作时间</th>
+								</tr>
+								<tr>
+									<td>提交订单</td>
+									<td></td>
+									<td>会员-李勇</td>
+									<td>2017-10-12 12:21</td>
+								</tr>
+								<tr>
+									<td>修改价格</td>
+									<td>单价4500修改至5000</td>
+									<td>瀚达木业旗舰店-小王</td>
+									<td>2017-10-12 12:21</td>
+								</tr>
+								<tr>
+									<td>提交订单</td>
+									<td></td>
+									<td>会员-李勇</td>
+									<td>2017-10-12 12:21</td>
+								</tr>
+							</table>
+						</div>
+						<!--日志 #-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--添加商品弹框-->
+		<div class="dialog dialog-shopList">
+			<div class="maskbg"></div>
+			<div class="dialog-cont">
+				<a class="close" href="javascript:void(0)"></a>
+				<h2>添加到商品列表</h2>
+				<div class="accmanage-goodsmanage">
+					<div class="shopHead">
+						<button class="btn-green">批量添加</button>
+						<div class="searchGroup">
+							<input type="text" name="" id="" value="" placeholder="商品名称/商品编号/订单号" />
+							<span></span>
+						</div>
+					</div>
+					<table class="goods-manage-table" border="0" cellspacing="0" cellpadding="0">
+						<thead>
+							<tr>
+								<th><label class="c15"><input type="checkbox"><i></i></label>全选</th>
+								<th>品名</th>
+								<th>等级</th>
+								<th>产地</th>
+								<th>规格</th>
+								<th>供应量</th>
+								<th>挂牌价</th>
+								<th>提货地区</th>
+								<th>发布时间</th>
+								<th>状态</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="td-inner">
+										<label class="c15"><input type="checkbox"><i></i></label>
+									</div>
+								</td>
+								<td>
+									<div class="td-inner">金丝楠木</div>
+								</td>
+								<td>
+									<div class="td-inner">A级</div>
+								</td>
+								<td>
+									<div class="td-inner">印度尼西亚</div>
+								</td>
+								<td>
+									<div class="td-inner">44*145*1-1.5M</div>
+								</td>
+								<td>
+									<div class="td-inner">200立方</div>
+								</td>
+								<td>
+									<div class="td-inner price">¥3600</div>
+								</td>
+								<td>
+									<div class="td-inner">张家港</div>
+								</td>
+								<td>
+									<div class="td-inner">2017-10-10 </div>
+								</td>
+								<td>
+									<div class="td-inner">上架</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="td-inner">
+										<label class="c15"><input type="checkbox"><i></i></label>
+									</div>
+								</td>
+								<td>
+									<div class="td-inner">金丝楠木</div>
+								</td>
+								<td>
+									<div class="td-inner">A级</div>
+								</td>
+								<td>
+									<div class="td-inner">印度尼西亚</div>
+								</td>
+								<td>
+									<div class="td-inner">44*145*1-1.5M</div>
+								</td>
+								<td>
+									<div class="td-inner">200立方</div>
+								</td>
+								<td>
+									<div class="td-inner price">¥3600</div>
+								</td>
+								<td>
+									<div class="td-inner">张家港</div>
+								</td>
+								<td>
+									<div class="td-inner">2017-10-10 </div>
+								</td>
+								<td>
+									<div class="td-inner">上架</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="td-inner">
+										<label class="c15"><input type="checkbox"><i></i></label>
+									</div>
+								</td>
+								<td>
+									<div class="td-inner">金丝楠木</div>
+								</td>
+								<td>
+									<div class="td-inner">A级</div>
+								</td>
+								<td>
+									<div class="td-inner">印度尼西亚</div>
+								</td>
+								<td>
+									<div class="td-inner">44*145*1-1.5M</div>
+								</td>
+								<td>
+									<div class="td-inner">200立方</div>
+								</td>
+								<td>
+									<div class="td-inner price">¥3600</div>
+								</td>
+								<td>
+									<div class="td-inner">张家港</div>
+								</td>
+								<td>
+									<div class="td-inner">2017-10-10 </div>
+								</td>
+								<td>
+									<div class="td-inner">上架</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="td-inner">
+										<label class="c15"><input type="checkbox"><i></i></label>
+									</div>
+								</td>
+								<td>
+									<div class="td-inner">金丝楠木</div>
+								</td>
+								<td>
+									<div class="td-inner">A级</div>
+								</td>
+								<td>
+									<div class="td-inner">印度尼西亚</div>
+								</td>
+								<td>
+									<div class="td-inner">44*145*1-1.5M</div>
+								</td>
+								<td>
+									<div class="td-inner">200立方</div>
+								</td>
+								<td>
+									<div class="td-inner price">¥3600</div>
+								</td>
+								<td>
+									<div class="td-inner">张家港</div>
+								</td>
+								<td>
+									<div class="td-inner">2017-10-10 </div>
+								</td>
+								<td>
+									<div class="td-inner">上架</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="page_box">
+						<span class="off">首页</span>
+						<span class="on">1</span>
+						<a href="">2</a>
+						<a href="">3</a>
+						<a href="">4</a>
+						<a href="">5</a>
+						<span class="dian">...</span>
+						<a href="">9</a>
+						<a href="">下一页</a>
+						<a href="">末页</a>
+						<span class="to"><input type="text" value="1" class="jump_page"></span>
+						<span class="go">跳转</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer main"></div>
+		<script type="text/javascript">
+			$('.footer.main').load("底部-主.html");
+		</script>
+		<!--end-->
+		<script src="js/app/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app/accmanage-seller-orderdetail.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#addShopBtn").on("click", function() {
+				$(".dialog-shopList").stop().fadeIn();
+			})
+			$(".dialog-shopList .close,.dialog-shopList .maskbg").on("click", function() {
+				$(".dialog-shopList").stop().fadeOut();
+			})
+		</script>
+	</body>
+
+</html>
